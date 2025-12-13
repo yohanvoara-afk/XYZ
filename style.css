@@ -1,0 +1,38 @@
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 0 16px;
+}
+
+.site-header {
+background-color: #0077b6;
+color: white;
+padding: 12px 0;
+}
+
+.main-title {
+margin: 0;
+}
+
+.nav-link {
+color: white;
+text-decoration: none;
+margin-right: 12px;
+}
+
+.nav-link:hover {
+text-decoration: underline;
+}
+
+.highlight-box {
+background-color: #f1f8ff;
+border: 1px solid #bbdefb;
+padding: 12px;
+border-radius: 6px;
+}
+
