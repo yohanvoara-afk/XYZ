@@ -1,48 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Vie Local - Ethical Handmade Marketplace</title>
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="#">La Vie Local</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Our Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#become-seller">Become a Seller</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-outline-light btn-sm" href="#">
+                            <i class="bi bi-person"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="bi bi-cart3"></i> Cart <span class="badge bg-light text-dark">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-
-    
-</head>
-
-<body>
-
-    <header class="site-header">
+    <!-- Hero Section -->
+    <header class="hero-section" id="home">
         <div class="container">
-        <h1>My Travel Site</h1>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Places</a>
-            <a href="#">Gallery</a>
-            <a href="#">About</a>
-            <link rel="stylesheet" href="css/style.css">
-        </nav>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-3 fw-bold mb-4">La Vie Local</h1>
+                    <p class="lead mb-5">"Supporting local art means keeping the soul of creativity alive."</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <a class="btn btn-primary btn-lg px-4 me-md-2" href="shop.html">Visit the Shop</a>
+                        <a href="#vision" class="btn btn-outline-light btn-lg">Discover the Creators</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="container">
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h4>Ethical Delivery</h4>
+                        <p class="mb-0">Carbon-neutral shipping options to protect our planet</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h4>Secure Payment</h4>
+                        <p class="mb-0">100% secure checkout with multiple payment options</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <h4>Local Impact</h4>
+                        <p class="mb-0">Supporting artisans and their communities directly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Welcome</h2>
-            <p>...</p>
-        </section>
+    <!-- Shop Section -->
+    <section id="shop" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Handmade Treasures</h2>
+            
+            <!-- Filters -->
+            <div class="row mb-5">
+                <div class="col-md-3 mb-3">
+                    <select class="form-select">
+                        <option selected>All Categories</option>
+                        <option>Jewelry</option>
+                        <option>Woven Items</option>
+                        <option>Decorative Objects</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <select class="form-select">
+                        <option selected>Price Range</option>
+                        <option>Under $50</option>
+                        <option>$50 - $100</option>
+                        <option>Over $100</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <select class="form-select">
+                        <option selected>Artisan</option>
+                        <option>Maria's Pottery</option>
+                        <option>Ahmed Weaves</option>
+                        <option>Sophie's Jewelry</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <select class="form-select">
+                        <option selected>Region</option>
+                        <option>Africa</option>
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>Americas</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Handmade Necklace">
+                            <span class="product-badge badge-new">New</span>
+                            <span class="product-badge badge-fair" style="right: 120px;">Fair Trade</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Handwoven Beaded Necklace</h5>
+                                <span class="text-primary fw-bold">$89.99</span>
+                            </div>
+                            <p class="text-muted small mb-3">By Maria's Artisan Collective</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-1">(24)</span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Ceramic Vase">
+                            <span class="product-badge badge-recycled">Recycled</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Handcrafted Ceramic Vase</h5>
+                                <span class="text-primary fw-bold">$124.99</span>
+                            </div>
+                            <p class="text-muted small mb-3">By Earth & Clay Studio</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <span class="ms-1">(37)</span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more products as needed -->
+                
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Highlights</h2>
-            <p>...</p>
-        </section>
+    <!-- Vision Section -->
+    <section id="vision" class="vision-section">
+        <div class="container">
+            <h2 class="section-title">Our Vision</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1523289217630-0dd16184af8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Artisan Working" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Empowering Artisans, Enriching Lives</h3>
+                    <p>At La Vie Local, we believe in the power of craftsmanship to transform communities. Our platform connects talented artisans from around the world with conscious consumers who value quality, sustainability, and ethical production.</p>
+                    <p>We're committed to:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Fair compensation for all artisans</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Sustainable and eco-friendly materials</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Preserving traditional crafting techniques</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Transparent supply chains</li>
+                    </ul>
+                    
+                    <h4 class="mt-5 mb-3">Our Partners</h4>
+                    <div class="row g-4">
+                        <div class="col-4 col-md-2">
+                            <img src="https://via.placeholder.com/80x40?text=Partner+1" alt="Partner Logo" class="img-fluid">
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <img src="https://via.placeholder.com/80x40?text=Partner+2" alt="Partner Logo" class="img-fluid">
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <img src="https://via.placeholder.com/80x40?text=Partner+3" alt="Partner Logo" class="img-fluid">
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <img src="https://via.placeholder.com/80x40?text=Partner+4" alt="Partner Logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- Become a Seller Section -->
+    <section id="become-seller" class="seller-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="text-white mb-3">Become a Seller</h2>
+                    <p class="lead text-white-50">Join our community of talented artisans and showcase your handmade creations to a global audience.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="step-card h-100">
+                        <div class="step-number">1</div>
+                        <h4>Create Your Profile</h4>
+                        <p>Set up your artisan profile with your story, photos, and workshop details. Let customers connect with the person behind the products.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="step-card h-100">
+                        <div class="step-number">2</div>
+                        <h4>List Your Products</h4>
+                        <p>Upload high-quality photos and detailed descriptions of your handmade items. Set your prices and shipping options.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="step-card h-100">
+                        <div class="step-number">3</div>
+                        <h4>Start Selling</h4>
+                        <p>Reach thousands of conscious shoppers looking for unique, handmade products. We handle payments and provide seller support.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h3 class="text-center mb-4">Join Our Community</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="business" class="form-label">Business Name (if any)</label>
+                                        <input type="text" class="form-control" id="business">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="description" class="form-label">Tell us about your craft</label>
+                                        <textarea class="form-control" id="description" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-3">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">Apply Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="site-footer">
-        <small>&copy; 2025 My Travel Site</small>
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-uppercase mb-4">La Vie Local</h5>
+                    <p>Celebrating craftsmanship and supporting local artisans worldwide with ethically made, high-quality handmade products.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">All Products</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Gift Cards</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">About</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Our Story</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Artisans</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Sustainability</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Shipping</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Returns</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="text-uppercase mb-4">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Cookie Policy</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small">&copy; 2023 La Vie Local. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 small">Made with <i class="bi bi-heart-fill text-danger"></i> for artisans worldwide</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Back to top button -->
+    <a href="#" class="btn btn-primary btn-floating btn-lg back-to-top" id="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
 
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Initialize navbar 
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        }
+
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
 </body>
 </html>

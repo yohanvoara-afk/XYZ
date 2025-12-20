@@ -1,0 +1,198 @@
+/* Custom CSS for La Vie Local */
+
+/* Header Styling */
+.navbar {
+    background-color: #ffffff !important;
+    transition: all 0.3s ease-in-out !important;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Add padding to the first section to account for fixed header */
+.hero-section {
+    padding-top: 80px;
+}
+
+/* Navbar text color */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.8) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #000000 !important;
+}
+
+.navbar-dark .navbar-brand {
+    color: #000000 !important;
+}
+
+/* Scrolled state - subtle shadow enhancement */
+.navbar.scrolled {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+/* Ensure all nested navbar elements respect the background */
+.navbar > *,
+.navbar .navbar-collapse,
+.navbar .navbar-nav,
+.navbar .container,
+.navbar .navbar-toggler {
+    background-color: transparent !important;
+}
+
+/* Header text colors and transitions */
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Scrolled state - keep text white */
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+/* Active link state */
+.navbar-nav .nav-link.active {
+    font-weight: 500;
+    color: #ffffff !important;
+}
+
+/* Vision Hero Section */
+.vision-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1523289217630-0dd16184af8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 160px 0 100px;
+}
+
+/* Value Cards */
+.value-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.value-icon {
+    width: 70px;
+    height: 70px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 30px;
+    color: #6c757d;
+}
+
+/* Team Member Styling */
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid #f8f9fa;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40 !important;
+    transition: all 0.3s ease;
+    padding: 10px 0;
+}
+
+.navbar.scrolled {
+    background-color: #343a40 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Custom Button Styling */
+.btn-outline-light:hover {
+    color: #000 !important;
+}
+
+/* Section Styling */
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #0d6efd;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .vision-hero {
+        padding: 120px 0 60px;
+    }
+    
+    .value-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Custom Colors */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+}
