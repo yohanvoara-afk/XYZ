@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Game Planning - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-success text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Middle Game Planning</h1>
+                <p class="lead">Creating and executing long-term strategies</p>
+                <a href="tactics.html#middlegame" class="btn btn-light">← Back to Middle Game</a>
+            </div>
+        </section>
+
+        <!-- Planning Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">The Art of Strategic Planning</h2>
+                                
+                                <p class="lead">Strategic planning separates good players from great players. While tactics win games, strategy creates the positions where tactics flourish. Planning is about understanding the long-term goals and working systematically toward them.</p>
+                                
+                                <h4>Why Planning Matters:</h4>
+                                <ul>
+                                    <li><strong>Long-term Vision:</strong> See beyond immediate moves</li>
+                                    <li><strong>Positional Understanding:</strong> Grasp what makes positions good</li>
+                                    <li><strong>Systematic Improvement:</strong> Build advantages step by step</li>
+                                    <li><strong>Practical Success:</strong> Win games through superior strategy</li>
+                                    <li><strong>Chess Mastery:</strong> Essential for high-level play</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Strategic Principle:</strong> "Every move should have a purpose and support your overall plan!"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planning Process -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">The Strategic Planning Process</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Step 1: Assess Position</h4>
+                                <p class="card-text">Evaluate all aspects of the current position.</p>
+                                
+                                <h5>Positional Elements:</h5>
+                                <ul>
+                                    <li><strong>Material Balance:</strong> Who has more material?</li>
+                                    <li><strong>King Safety:</strong> How safe are the kings?</li>
+                                    <li><strong>Pawn Structure:</strong> Are there weaknesses?</li>
+                                    <li><strong>Piece Activity:</strong> How active are the pieces?</li>
+                                    <li><strong>Space Advantage:</strong> Who controls more space?</li>
+                                    <li><strong>Time Factor:</strong> Who is better developed?</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Tip:</strong> Create a mental checklist for position evaluation!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Step 2: Identify Weaknesses</h4>
+                                <p class="card-text">Find targets to attack and weaknesses to exploit.</p>
+                                
+                                <h5>Types of Weaknesses:</h5>
+                                <ul>
+                                    <li><strong>Pawn Weaknesses:</strong> Doubled, isolated, backward pawns</li>
+                                    <li><strong>Square Weaknesses:</strong> Holes, weak squares</li>
+                                    <li><strong>Piece Weaknesses:</strong> Poorly placed pieces</li>
+                                    <li><strong>King Weaknesses:</strong> Exposed king</li>
+                                    <li><strong>Structural Weaknesses:</strong> Poor coordination</li>
+                                </ul>
+                                
+                                <h5>Target Priorities:</h5>
+                                <ul>
+                                    <li>Permanent vs temporary weaknesses</li>
+                                    <li>Attackable vs defended weaknesses</li>
+                                    <li>Immediate vs long-term targets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Step 3: Set Goals</h4>
+                                <p class="card-text">Define clear, achievable objectives.</p>
+                                
+                                <h5>Types of Goals:</h5>
+                                <ul>
+                                    <li><strong>Strategic Goals:</strong> Long-term positional advantages</li>
+                                    <li><strong>Tactical Goals:</strong> Immediate tactical opportunities</li>
+                                    <li><strong>Defensive Goals:</strong> Safety and stability</li>
+                                    <li><strong>Attacking Goals:</strong> Create threats</li>
+                                </ul>
+                                
+                                <h5>SMART Goals:</h5>
+                                <ul>
+                                    <li><strong>S</strong>pecific - Clear objectives</li>
+                                    <li><strong>M</strong>easurable - Progress tracking</li>
+                                    <li><strong>A</strong>chievable - Realistic targets</li>
+                                    <li><strong>R</strong>elevant - Support overall strategy</li>
+                                    <li><strong>T</strong>ime-bound - Timeline for execution</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">Step 4: Execute Plan</h4>
+                                <p class="card-text">Implement your strategy systematically.</p>
+                                
+                                <h5>Execution Principles:</h5>
+                                <ul>
+                                    <li><strong>Move Order:</strong> Optimal sequence of moves</li>
+                                    <li><strong>Piece Coordination:</strong> Work together</li>
+                                    <li><strong>Flexibility:</strong> Adapt to opponent's moves</li>
+                                    <li><strong>Persistence:</strong> Stay committed to plan</li>
+                                </ul>
+                                
+                                <h5>Execution Checklist:</h5>
+                                <ul>
+                                    <li>Does this move support my plan?</li>
+                                    <li>Are there immediate tactical threats?</li>
+                                    <li>How will opponent respond?</li>
+                                    <li>What's my next move in the sequence?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Themes -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Common Strategic Themes</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Space Advantage</h4>
+                                <p class="card-text">Controlling more of the board gives you more options.</p>
+                                
+                                <h5>How to Use Space:</h5>
+                                <ul>
+                                    <li>Maneuver pieces freely</li>
+                                    <li>Create multiple threats</li>
+                                    <li>Restrict opponent's pieces</li>
+                                    <li>Prepare attacks</li>
+                                </ul>
+                                
+                                <h5>Space Exploitation:</h5>
+                                <ul>
+                                    <li>Attack on multiple fronts</li>
+                                    <li>Force opponent to defend passively</li>
+                                    <li>Create tactical opportunities</li>
+                                    <li>Convert to material advantage</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Principle:</strong> Space advantage is temporary - use it or lose it!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Weak Square Exploitation</h4>
+                                <p class="card-text">Control and occupy weak squares in opponent's position.</p>
+                                
+                                <h5>Identifying Weak Squares:</h5>
+                                <ul>
+                                    <li>Holes in pawn structure</li>
+                                    <li>Insufficiently defended squares</li>
+                                    <li>Key strategic squares</li>
+                                    <li>Outposts for pieces</li>
+                                </ul>
+                                
+                                <h5>Exploitation Methods:</h5>
+                                <ul>
+                                    <li>Place pieces on weak squares</li>
+                                    <li>Control access to weak squares</li>
+                                    <li>Create additional weaknesses</li>
+                                    <li>Attack around weak squares</li>
+                                </ul>
+                                
+                                <div class="alert alert-primary">
+                                    <strong>Key:</strong> A weak square is a permanent strategic advantage!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Pawn Structure Advantages</h4>
+                                <p class="card-text">Pawn structure determines the character of the position.</p>
+                                
+                                <h5>Good Pawn Structures:</h5>
+                                <ul>
+                                    <li>Connected pawns</li>
+                                    <li>Pawn majority</li>
+                                    <li>Passed pawns</li>
+                                    <li>Healthy pawn chains</li>
+                                </ul>
+                                
+                                <h5>Exploiting Pawn Structure:</h5>
+                                <ul>
+                                    <li>Create pawn breaks</li>
+                                    <li>Fix opponent's weaknesses</li>
+                                    <li>Use pawn majority</li>
+                                    <li>Prepare endgame advantages</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Rule:</strong> Pawn structure is the skeleton of your position!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">King Safety Considerations</h4>
+                                <p class="card-text">Balance attack with defense for optimal results.</p>
+                                
+                                <h5>King Safety Factors:</h5>
+                                <ul>
+                                    <li>Pawn cover around king</li>
+                                    <li>Defensive pieces nearby</li>
+                                    <li>Open lines to king</li>
+                                    <li>Opponent's attacking pieces</li>
+                                </ul>
+                                
+                                <h5>Safety Planning:</h5>
+                                <ul>
+                                    <li>Castling timing</li>
+                                    <li>Pawn shield maintenance</li>
+                                    <li>Defensive piece placement</li>
+                                    <li>Counterattack preparation</li>
+                                </ul>
+                                
+                                <div class="alert alert-danger">
+                                    <strong>Warning:</strong> The king's safety is paramount - one mistake can be fatal!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planning Examples -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Strategic Planning Examples</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">🎯 Real-World Planning Scenarios</h4>
+                                
+                                <div class="planning-example mb-4">
+                                    <h5>Scenario 1: Space Advantage</h5>
+                                    <p><strong>Position:</strong> You have more space and better piece activity.</p>
+                                    <p><strong>Planning Process:</strong></p>
+                                    <ol>
+                                        <li><strong>Assess:</strong> Space advantage, better pieces</li>
+                                        <li><strong>Weaknesses:</strong> Opponent's cramped position</li>
+                                        <li><strong>Goal:</strong> Convert space into attack</li>
+                                        <li><strong>Execute:</strong> Create multiple threats, restrict further</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="planning-example mb-4">
+                                    <h5>Scenario 2: Pawn Structure</h5>
+                                    <p><strong>Position:</strong> You have queenside pawn majority.</p>
+                                    <p><strong>Planning Process:</strong></p>
+                                    <ol>
+                                        <li><strong>Assess:</strong> Pawn majority advantage</li>
+                                        <li><strong>Weaknesses:</strong> Opponent's weak kingside</li>
+                                        <li><strong>Goal:</strong> Create passed pawn</li>
+                                        <li><strong>Execute:</strong> Advance majority, support with pieces</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="planning-example">
+                                    <h5>Scenario 3: Piece Coordination</h5>
+                                    <p><strong>Position:</strong> Your pieces are well-coordinated.</p>
+                                    <p><strong>Planning Process:</strong></p>
+                                    <ol>
+                                        <li><strong>Assess:</strong> Superior piece harmony</li>
+                                        <li><strong>Weaknesses:</strong> Opponent's uncoordinated pieces</li>
+                                        <li><strong>Goal:</strong> Exploit coordination advantage</li>
+                                        <li><strong>Execute:</strong> Attack with combined force</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="alert alert-info mt-4">
+                                    <strong>Key Insight:</strong> Every position has a best plan - your job is to find it!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planning Training -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Planning Training Methods</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">📚 How to Improve Strategic Planning</h4>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Study Methods:</h5>
+                                        <ul>
+                                            <li><strong>Master Games:</strong> Analyze strategic masterpieces</li>
+                                            <li><strong>Positional Play:</strong> Study positional classics</li>
+                                            <li><strong>Strategy Books:</strong> Read strategic treatises</li>
+                                            <li><strong>Game Analysis:</strong> Review your strategic decisions</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h5>Practice Techniques:</h5>
+                                        <ul>
+                                            <li><strong>Position Solving:</strong> Find best plans</li>
+                                            <li><strong>Slow Games:</strong> Practice deep thinking</li>
+                                            <li><strong>Verbalization:</strong> Explain your plans</li>
+                                            <li><strong>Planning Sessions:</strong> Dedicated practice time</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="mt-4">Training Exercises:</h5>
+                                <div class="exercise-list">
+                                    <div class="alert alert-light mb-2">
+                                        <strong>Exercise 1:</strong> Take a complex position, spend 10 minutes creating a plan, then compare with master analysis.
+                                    </div>
+                                    <div class="alert alert-light mb-2">
+                                        <strong>Exercise 2:</strong> Play slow games (30+ minutes) focusing exclusively on strategic planning.
+                                    </div>
+                                    <div class="alert alert-light mb-2">
+                                        <strong>Exercise 3:</strong> Analyze your games, identify where planning could have been better.
+                                    </div>
+                                    <div class="alert alert-light">
+                                        <strong>Exercise 4:</strong> Study one strategic theme per week (space, weak squares, etc.).
+                                    </div>
+                                </div>
+                                
+                                <div class="alert alert-success mt-4">
+                                    <h6>🎯 Pro Tip:</h6>
+                                    <p class="mb-0">Strategic planning improves with practice. Start with simple positions and gradually increase complexity!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your Planning Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What is the first step in strategic planning?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkPlanningAnswer(this, false)">Identify weaknesses</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPlanningAnswer(this, false)">Set goals</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPlanningAnswer(this, true)">Assess position</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPlanningAnswer(this, false)">Execute plan</button>
+                                </div>
+                                <div id="planningQuizResult1" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What should every move support?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkPlanningAnswer2(this, false)">Immediate tactics</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPlanningAnswer2(this, false)">Piece development</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPlanningAnswer2(this, false)">King safety</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPlanningAnswer2(this, true)">Overall plan</button>
+                                </div>
+                                <div id="planningQuizResult2" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkPlanningAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('planningQuizResult1');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! Position assessment is always the first step.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Excellent! You must first understand the position before you can plan effectively.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Not quite! Think about the logical order of strategic planning.</div>';
+            }
+        }
+
+        function checkPlanningAnswer2(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('planningQuizResult2');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! Every move should support your overall plan.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Perfect! Strategic consistency is key to successful planning.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! What should guide all your moves in a strategic game?</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Game Tactics - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Middle Game Tactics</h1>
+                <p class="lead">Master the art of forcing moves and immediate threats</p>
+                <a href="tactics.html#middlegame" class="btn btn-light">← Back to Middle Game</a>
+            </div>
+        </section>
+
+        <!-- Tactics Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">The Power of Tactics</h2>
+                                
+                                <p class="lead">Tactics are the heart and soul of chess. They are forcing sequences that lead to material gain, checkmate, or significant positional advantages. Mastering tactics is essential for chess improvement.</p>
+                                
+                                <h4>Why Tactics Matter:</h4>
+                                <ul>
+                                    <li><strong>Immediate Results:</strong> Win material or deliver checkmate</li>
+                                    <li><strong>Pattern Recognition:</strong> Spot opportunities quickly</li>
+                                    <li><strong>Calculation Skills:</strong> Improve your chess vision</li>
+                                    <li><strong>Practical Success:</strong> Most games are decided by tactics</li>
+                                    <li><strong>Foundation:</strong> Tactics flow from good positions</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Golden Rule:</strong> "Tactics flow from good positions, but good positions come from good tactics!"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basic Tactical Patterns -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Basic Tactical Patterns</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Fork</h4>
+                                <p class="card-text">A single piece attacks two or more enemy pieces simultaneously.</p>
+                                
+                                <h5>How It Works:</h5>
+                                <ul>
+                                    <li>One piece creates multiple threats</li>
+                                    <li>Opponent can only defend one target</li>
+                                    <li>Results in material gain</li>
+                                </ul>
+                                
+                                <h5>Common Forking Pieces:</h5>
+                                <ul>
+                                    <li><strong>Knight:</strong> Most common forker</li>
+                                    <li><strong>King:</strong> Endgame forks</li>
+                                    <li><strong>Pawn:</strong> Simple forks</li>
+                                    <li><strong>Queen:</strong> Powerful forks</li>
+                                </ul>
+                                
+                                <div class="alert alert-primary">
+                                    <strong>Example:</strong> Knight on e5 attacks King on g6 and Queen on c6
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Pin</h4>
+                                <p class="card-text">A piece attacks an enemy piece that cannot move without exposing a more valuable piece behind it.</p>
+                                
+                                <h5>Types of Pins:</h5>
+                                <ul>
+                                    <li><strong>Absolute Pin:</strong> Pinned piece cannot legally move</li>
+                                    <li><strong>Relative Pin:</strong> Pinned piece can move but at cost</li>
+                                </ul>
+                                
+                                <h5>Best Pinning Pieces:</h5>
+                                <ul>
+                                    <li><strong>Bishop:</strong> Long diagonal pins</li>
+                                    <li><strong>Rook:</strong> File and rank pins</li>
+                                    <li><strong>Queen:</strong> Most powerful pins</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Example:</strong> Bishop on g5 pins Knight on f6 to Queen on d8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Tactical Patterns -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Advanced Tactical Patterns</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Skewer</h4>
+                                <p class="card-text">Similar to a pin, but the more valuable piece is in front and forced to move, exposing the less valuable piece behind.</p>
+                                
+                                <h5>How It Works:</h5>
+                                <ul>
+                                    <li>Attack valuable piece first</li>
+                                    <li>Force it to move away</li>
+                                    <li>Capture the piece behind</li>
+                                </ul>
+                                
+                                <h5>Best Skewering Pieces:</h5>
+                                <ul>
+                                    <li><strong>Queen:</strong> Most versatile</li>
+                                    <li><strong>Rook:</strong> File/rank skewers</li>
+                                    <li><strong>Bishop:</strong> Diagonal skewers</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Example:</strong> Queen on d2 skewers King on d8 and Rook on a5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">Discovered Attack</h4>
+                                <p class="card-text">Moving a piece reveals an attack from another piece behind it.</p>
+                                
+                                <h5>Types:</h5>
+                                <ul>
+                                    <li><strong>Discovered Check:</strong> Reveals check</li>
+                                    <li><strong>Discovered Attack:</strong> Reveals attack on piece</li>
+                                    <li><strong>Double Check:</strong> Both pieces give check</li>
+                                </ul>
+                                
+                                <h5>Best Pieces for Discovery:</h5>
+                                <ul>
+                                    <li><strong>Knight:</strong> Jumping discoveries</li>
+                                    <li><strong>Bishop:</strong> Diagonal discoveries</li>
+                                    <li><strong>Rook:</strong> Straight discoveries</li>
+                                </ul>
+                                
+                                <div class="alert alert-danger">
+                                    <strong>Example:</strong> Knight moves from f3 to g5, discovering Queen on d1 attacking h5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complex Tactical Themes -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Complex Tactical Themes</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-info">Removal of Guard</h4>
+                                <p class="card-text">Capture or drive away a piece that is defending another piece, making that piece vulnerable.</p>
+                                
+                                <h5>How to Execute:</h5>
+                                <ul>
+                                    <li>Identify key defender</li>
+                                    <li>Remove or distract defender</li>
+                                    <li>Attack the now-unprotected piece</li>
+                                </ul>
+                                
+                                <h5>Common Scenarios:</h5>
+                                <ul>
+                                    <li>Defending knight from pawn</li>
+                                    <li>Defending bishop from knight</li>
+                                    <li>Defending queen from minor piece</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Key:</strong> Always look for the defender before attacking!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-secondary">Deflection</h4>
+                                <p class="card-text">Force an enemy piece away from its defensive duties by creating a more urgent threat.</p>
+                                
+                                <h5>Deflection Techniques:</h5>
+                                <ul>
+                                    <li>Create attack on deflector</li>
+                                    <li>Sacrifice to deflect piece</li>
+                                    <li>Use multiple threats</li>
+                                </ul>
+                                
+                                <h5>Typical Targets:</h5>
+                                <ul>
+                                    <li>Pieces defending king</li>
+                                    <li>Pieces defending key squares</li>
+                                    <li>Pieces defending other pieces</li>
+                                </ul>
+                                
+                                <div class="alert alert-secondary">
+                                    <strong>Principle:</strong> "Remove the defender" is a tactical motto!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tactical Training -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Tactical Training Methods</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">🎯 How to Improve Your Tactics</h4>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Daily Training:</h5>
+                                        <ul>
+                                            <li><strong>Puzzle Solving:</strong> 10-15 puzzles daily</li>
+                                            <li><strong>Pattern Recognition:</strong> Study common motifs</li>
+                                            <li><strong>Calculation:</strong> Practice forcing moves</li>
+                                            <li><strong>Visualization:</strong> See moves ahead</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h5>Study Methods:</h5>
+                                        <ul>
+                                            <li><strong>Tactical Books:</strong> Classic puzzle collections</li>
+                                            <li><strong>Online Trainers:</strong> Interactive puzzles</li>
+                                            <li><strong>Game Analysis:</strong> Find missed tactics</li>
+                                            <li><strong>Speed Training:</strong> Blitz tactics</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="mt-4">Training Schedule:</h5>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Day</th>
+                                                <th>Focus</th>
+                                                <th>Duration</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Monday</td>
+                                                <td>Basic tactics (forks, pins)</td>
+                                                <td>20 minutes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tuesday</td>
+                                                <td>Advanced tactics (skewers, discoveries)</td>
+                                                <td>25 minutes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Wednesday</td>
+                                                <td>Complex combinations</td>
+                                                <td>30 minutes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thursday</td>
+                                                <td>Speed tactics training</td>
+                                                <td>15 minutes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Friday</td>
+                                                <td>Game analysis for tactics</td>
+                                                <td>25 minutes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Weekend</td>
+                                                <td>Tournament practice games</td>
+                                                <td>60+ minutes</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="alert alert-success mt-4">
+                                    <h6>🎯 Pro Tip:</h6>
+                                    <p class="mb-0">Consistency is key! Even 15 minutes of tactical training daily will dramatically improve your chess strength.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Mistakes -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Common Tactical Mistakes</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">⚠️ Tactical Blunders to Avoid</h4>
+                                
+                                <div class="mistake-category mb-4">
+                                    <h5>Calculation Errors:</h5>
+                                    <ul>
+                                        <li><strong>Missing Moves:</strong> Not seeing opponent's best response</li>
+                                        <li><strong>Forced Moves:</strong> Not considering all forcing moves</li>
+                                        <li><strong>Candidate Moves:</strong> Not generating enough candidate moves</li>
+                                        <li><strong>Depth:</strong> Not calculating far enough ahead</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mistake-category mb-4">
+                                    <h5>Pattern Recognition:</h5>
+                                    <ul>
+                                        <li><strong>Familiar Patterns:</strong> Missing common tactical motifs</li>
+                                        <li><strong>Hidden Threats:</strong> Not seeing concealed attacks</li>
+                                        <li><strong>Multiple Threats:</strong> Missing double attacks</li>
+                                        <li><strong>Defensive Resources:</strong> Not seeing defensive tactics</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mistake-category">
+                                    <h5>Psychological Errors:</h5>
+                                    <ul>
+                                        <li><strong>Complacency:</strong> Relaxing in winning positions</li>
+                                        <li><strong>Panic:</strong> Rushing in difficult positions</li>
+                                        <li><strong>Time Pressure:</strong> Making mistakes when low on time</li>
+                                        <li><strong>Emotional Play:</strong> Playing based on feelings, not calculation</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="alert alert-warning mt-4">
+                                    <strong>Remember:</strong> Even grandmasters miss tactics. The key is to learn from your mistakes!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your Tactical Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What is a tactical fork?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkTacticsAnswer(this, false)">A pin that attacks multiple pieces</button>
+                                    <button class="btn btn-outline-primary" onclick="checkTacticsAnswer(this, true)">One piece attacks multiple pieces</button>
+                                    <button class="btn btn-outline-primary" onclick="checkTacticsAnswer(this, false)">A discovered attack</button>
+                                    <button class="btn btn-outline-primary" onclick="checkTacticsAnswer(this, false)">A defensive maneuver</button>
+                                </div>
+                                <div id="tacticsQuizResult1" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Which piece is best for forks?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkTacticsAnswer2(this, false)">Bishop</button>
+                                    <button class="btn btn-outline-primary" onclick="checkTacticsAnswer2(this, false)">Rook</button>
+                                    <button class="btn btn-outline-primary" onclick="checkTacticsAnswer2(this, true)">Knight</button>
+                                    <button class="btn btn-outline-primary" onclick="checkTacticsAnswer2(this, false)">Pawn</button>
+                                </div>
+                                <div id="tacticsQuizResult2" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkTacticsAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('tacticsQuizResult1');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! A fork is when one piece attacks multiple enemy pieces.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Excellent! Forks are one of the most common and powerful tactical motifs in chess.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Not quite! Think about what makes a fork special.</div>';
+            }
+        }
+
+        function checkTacticsAnswer2(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('tacticsQuizResult2');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! The knight is the best piece for forks due to its L-shaped movement.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Perfect! The knight\'s unique L-shaped movement makes it the most dangerous forking piece.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! Which piece can attack in the most unusual ways?</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicilian Defense - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-warning text-dark py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Sicilian Defense</h1>
+                <p class="lead">The ultimate fighting opening for Black</p>
+                <a href="tactics.html#openings" class="btn btn-dark">← Back to Openings</a>
+            </div>
+        </section>
+
+        <!-- Opening Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">The Sicilian Defense</h2>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-warning">1.e4 c5</h3>
+                                </div>
+                                
+                                <p class="lead">The Sicilian Defense is Black's most popular and ambitious response to 1.e4. It creates asymmetrical positions from the very first move, leading to complex and dynamic battles where Black fights for the win.</p>
+                                
+                                <h4>Why Play the Sicilian?</h4>
+                                <ul>
+                                    <li><strong>Winning Chances:</strong> Best practical chances to win with Black</li>
+                                    <li><strong>Imbalance:</strong> Creates unbalanced, fighting positions</li>
+                                    <li><strong>Counterplay:</strong> Immediate fighting chances</li>
+                                    <li><strong>Rich Theory:</strong> Deep and fascinating variations</li>
+                                    <li><strong>World Champion Choice:</strong> Played by all top players</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Ideas -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Core Strategic Concepts</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">The Logic Behind 1...c5</h4>
+                                <div class="move-sequence">
+                                    <p><strong>1.e4 c5</strong> - The defining move of the Sicilian</p>
+                                    <p><strong>Main Idea:</strong> Fight for center control from the flank</p>
+                                </div>
+                                
+                                <h5>Strategic Purpose:</h5>
+                                <ul>
+                                    <li>Prevents White's d4 push</li>
+                                    <li>Controls d4 square indirectly</li>
+                                    <li>Prepares queenside expansion</li>
+                                    <li>Creates imbalanced pawn structure</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Key Concept:</strong> The Sicilian fights for the center without directly occupying it.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">Typical Pawn Structures</h4>
+                                <ul>
+                                    <li><strong>Open Sicilian:</strong> 2.Nf3 d6 3.d4 cxd4 - Open center</li>
+                                    <li><strong>Maroczy Bind:</strong> c4 pawn structure - Space advantage</li>
+                                    <li><strong>Dragon Structure:</strong> Fianchetto bishop - Sharp play</li>
+                                    <li><strong>Scheveningen:</strong> e6 and d6 - Flexible setup</li>
+                                </ul>
+                                
+                                <h5>Strategic Themes:</h5>
+                                <ul>
+                                    <li>Queenside majority vs kingside attack</li>
+                                    <li>Open file control</li>
+                                    <li>Minor piece battles</li>
+                                    <li>Endgame advantages</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Variations -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Main Sicilian Variations</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Open Sicilian</h4>
+                                <p><strong>Moves:</strong> 2.Nf3 d6 3.d4 cxd4 4.Nxd4</p>
+                                <p>Most popular and principled response. Leads to open, tactical battles.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Open center and tactical play</li>
+                                    <li>White's space advantage</li>
+                                    <li>Black's counterplay</li>
+                                    <li>Dynamic piece play</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Best for:</strong> Players who enjoy sharp, tactical games
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">Najdorf Variation</h4>
+                                <p><strong>Moves:</strong> 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6</p>
+                                <p>Most complex and respected Sicilian variation.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Flexible pawn structure</li>
+                                    <li>Multiple attacking plans</li>
+                                    <li>Rich tactical possibilities</li>
+                                    <li>World championship tested</li>
+                                </ul>
+                                
+                                <div class="alert alert-danger">
+                                    <strong>Best for:</strong> Ambitious players seeking winning chances
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Dragon Variation</h4>
+                                <p><strong>Moves:</strong> 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6</p>
+                                <p>Sharp variation with fianchetto bishop.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Fianchetto bishop control</li>
+                                    <li>Sharp kingside attacks</li>
+                                    <li>Castled opposite sides</li>
+                                    <li>Race to checkmate</li>
+                                </ul>
+                                
+                                <div class="alert alert-primary">
+                                    <strong>Best for:</strong> Tactical players who love attacking games
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mt-2">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Scheveningen</h4>
+                                <p><strong>Moves:</strong> 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6</p>
+                                <p>Solid and flexible setup.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Solid pawn structure</li>
+                                    <li>Flexible development</li>
+                                    <li>Strategic play</li>
+                                    <li>Endgame chances</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-info">Classical Sicilian</h4>
+                                <p><strong>Moves:</strong> 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6</p>
+                                <p>Classical development pattern.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Harmonious development</li>
+                                    <li>Center control</li>
+                                    <li>Strategic complexity</li>
+                                    <li>Balanced positions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-secondary">Accelerated Dragon</h4>
+                                <p><strong>Moves:</strong> 2.Nf3 g6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Bg7</h4>
+                                <p>Faster Dragon setup.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Rapid development</li>
+                                    <li>Fianchetto bishop</li>
+                                    <li>Dynamic play</li>
+                                    <li>Counterattacking chances</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Themes -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Strategic Themes</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">White's Strategic Plans</h4>
+                                
+                                <h5>Space Advantage:</h5>
+                                <ul>
+                                    <li>Control open files</li>
+                                    <li>Utilize space advantage</li>
+                                    <li>Restrict Black's counterplay</li>
+                                    <li>Prepare kingside attack</li>
+                                </ul>
+                                
+                                <h5>Typical Attacks:</h5>
+                                <ul>
+                                    <li>Kingside pawn storms</li>
+                                    <li>Sacrificial attacks</li>
+                                    <li>Minor piece domination</li>
+                                    <li>Exploiting weak squares</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>White's Goal:</strong> Convert space advantage into attack
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Black's Strategic Plans</h4>
+                                
+                                <h5>Counterplay:</h5>
+                                <ul>
+                                    <li>Queenside majority</li>
+                                    <li>Open file control</li>
+                                    <li>Tactical complications</li>
+                                    <li>Endgame advantages</li>
+                                </ul>
+                                
+                                <h5>Typical Counterattacks:</h5>
+                                <ul>
+                                    <li>...b5 pawn breaks</li>
+                                    <li>Center breaks</li>
+                                    <li>Minor piece exchanges</li>
+                                    <li>Exploiting White's overextension</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Black's Strategy:</strong> Create counterplay and exploit imbalances
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Games -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Legendary Sicilian Games</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">🏆 Immortal Sicilian Battles</h4>
+                                
+                                <div class="game-example mb-4">
+                                    <h5>Fischer vs. Spassky (World Championship 1972)</h5>
+                                    <p>Fischer's brilliant handling of the Sicilian Najdorf showcased his deep tactical vision and endgame technique.</p>
+                                </div>
+                                
+                                <div class="game-example mb-4">
+                                    <h5>Kasparov vs. Anand (1995)</h5>
+                                    <p>Classic Najdorf battle demonstrating the complexity and fighting nature of modern Sicilian chess.</p>
+                                </div>
+                                
+                                <div class="game-example mb-4">
+                                    <h5>Tal vs. Botvinnik (World Championship 1960)</h5>
+                                    <p>Tal's sacrificial Sicilian attacks revolutionized understanding of dynamic play.</p>
+                                </div>
+                                
+                                <div class="game-example">
+                                    <h5>Carlsen vs. Karjakin (2016)</h5>
+                                    <p>Modern Sicilian defense showing how top players navigate complex tactical positions.</p>
+                                </div>
+                                
+                                <div class="alert alert-info mt-4">
+                                    <strong>Study Tip:</strong> Sicilian games teach tactical vision and dynamic understanding!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tips -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Mastery Guide</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">📚 How to Master the Sicilian</h4>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Study Approach:</h5>
+                                        <ul>
+                                            <li>Choose one main variation</li>
+                                            <li>Understand pawn structures</li>
+                                            <li>Study typical tactical patterns</li>
+                                            <li>Analyze master games</li>
+                                            <li>Practice with computer analysis</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h5>Training Focus:</h5>
+                                        <ul>
+                                            <li>Tactical calculation</li>
+                                            <li>Positional understanding</li>
+                                            <li>Endgame technique</li>
+                                            <li>Time management</li>
+                                            <li>Opening preparation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="alert alert-warning mt-4">
+                                    <h6>🎯 Pro Tip:</h6>
+                                    <p class="mb-0">Start with one Sicilian variation and master it before exploring others. The Najdorf or Dragon are excellent starting points!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What is the main idea behind 1...c5?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkSicilianAnswer(this, false)">Directly control the center</button>
+                                    <button class="btn btn-outline-primary" onclick="checkSicilianAnswer(this, true)">Fight for center from the flank</button>
+                                    <button class="btn btn-outline-primary" onclick="checkSicilianAnswer(this, false)">Prepare to castle</button>
+                                    <button class="btn btn-outline-primary" onclick="checkSicilianAnswer(this, false)">Develop a piece</button>
+                                </div>
+                                <div id="sicilianQuizResult1" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Which Sicilian variation is most complex?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkSicilianAnswer2(this, false)">Dragon</button>
+                                    <button class="btn btn-outline-primary" onclick="checkSicilianAnswer2(this, true)">Najdorf</button>
+                                    <button class="btn btn-outline-primary" onclick="checkSicilianAnswer2(this, false)">Scheveningen</button>
+                                    <button class="btn btn-outline-primary" onclick="checkSicilianAnswer2(this, false)">Classical</button>
+                                </div>
+                                <div id="sicilianQuizResult2" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkSicilianAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('sicilianQuizResult1');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! The Sicilian fights for center control from the flank.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Excellent! The Sicilian controls the d4 square and prepares to fight for central control from the flank.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Not quite! Think about how the Sicilian approaches center control.</div>';
+            }
+        }
+
+        function checkSicilianAnswer2(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('sicilianQuizResult2');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! The Najdorf is the most complex and respected variation.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Perfect! The Najdorf offers the richest strategic and tactical possibilities of all Sicilian variations.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! Which variation offers the most complex possibilities?</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

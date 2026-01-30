@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Game Piece Coordination - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-warning text-dark py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Piece Coordination</h1>
+                <p class="lead">Making your pieces work together harmoniously</p>
+                <a href="tactics.html#middlegame" class="btn btn-dark">← Back to Middle Game</a>
+            </div>
+        </section>
+
+        <!-- Coordination Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">The Power of Piece Harmony</h2>
+                                
+                                <p class="lead">Piece coordination is the art of making your chess pieces work together as a unified team. Well-coordinated pieces are exponentially more powerful than the sum of their individual strengths.</p>
+                                
+                                <h4>Why Coordination Matters:</h4>
+                                <ul>
+                                    <li><strong>Synergistic Power:</strong> Pieces amplify each other's strength</li>
+                                    <li><strong>Strategic Depth:</strong> Creates complex positional advantages</li>
+                                    <li><strong>Tactical Opportunities:</strong> Enables powerful combinations</li>
+                                    <li><strong>Defensive Strength:</strong> Mutual protection and coverage</li>
+                                    <li><strong>Chess Mastery:</strong> Essential for high-level play</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Coordination Principle:</strong> "Make your pieces stronger together than apart!"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coordination Principles -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Fundamental Coordination Principles</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Piece Harmony</h4>
+                                <p class="card-text">Pieces should support and complement each other's roles.</p>
+                                
+                                <h5>Harmony Elements:</h5>
+                                <ul>
+                                    <li><strong>Mutual Support:</strong> Pieces defend each other</li>
+                                    <li><strong>Complementary Roles:</strong> Different pieces cover different aspects</li>
+                                    <li><strong>Unified Purpose:</strong> All pieces work toward same goal</li>
+                                    <li><strong>Balanced Development:</strong> No piece is left behind</li>
+                                </ul>
+                                
+                                <h5>Examples of Harmony:</h5>
+                                <ul>
+                                    <li>Bishop pair controlling diagonals</li>
+                                    <li>Queen and knight attacking together</li>
+                                    <li>Rooks supporting each other</li>
+                                    <li>Pieces defending key squares</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Key:</strong> Every piece should have a purpose and support the team!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Key Square Control</h4>
+                                <p class="card-text">Focus piece power on the most important squares.</p>
+                                
+                                <h5>Important Squares:</h5>
+                                <ul>
+                                    <li><strong>Center Squares:</strong> d4, e4, d5, e5</li>
+                                    <li><strong>Outposts:</strong> Advanced squares for pieces</li>
+                                    <li><strong>Weak Squares:</strong> Holes in enemy position</li>
+                                    <li><strong>Strategic Squares:</strong> Key control points</li>
+                                </ul>
+                                
+                                <h5>Control Methods:</h5>
+                                <ul>
+                                    <li>Multiple pieces targeting same square</li>
+                                    <li>Pieces defending key squares</li>
+                                    <li>Controlling access routes</li>
+                                    <li>Creating strong points</li>
+                                </ul>
+                                
+                                <div class="alert alert-primary">
+                                    <strong>Principle:</strong> Control the important squares and you control the game!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Attack Together</h4>
+                                <p class="card-text">Coordinate multiple pieces for powerful attacks.</p>
+                                
+                                <h5>Coordinated Attacks:</h5>
+                                <ul>
+                                    <li><strong>Multi-piece Attacks:</strong> Several pieces on one target</li>
+                                    <li><strong>Layered Attacks:</strong> Pieces at different distances</li>
+                                    <li><strong>Combined Force:</strong> Different piece types together</li>
+                                    <li><strong>Sustained Pressure:</strong> Continuous threats</li>
+                                </ul>
+                                
+                                <h5>Attack Coordination:</h5>
+                                <ul>
+                                    <li>Queen and bishop diagonal attacks</li>
+                                    <li>Rook and knight file attacks</li>
+                                    <li>Multiple pieces on weak squares</li>
+                                    <li>Pieces supporting breakthroughs</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Rule:</strong> The best attacks involve multiple pieces working together!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">Defend Together</h4>
+                                <p class="card-text">Coordinate defense for maximum security.</p>
+                                
+                                <h5>Defensive Coordination:</h5>
+                                <ul>
+                                    <li><strong>Mutual Protection:</strong> Pieces defend each other</li>
+                                    <li><strong>Layered Defense:</strong> Multiple defensive lines</li>
+                                    <li><strong>Flexible Defense:</strong> Pieces can shift roles</li>
+                                    <li><strong>Proactive Defense:</strong> Prevent attacks before they start</li>
+                                </ul>
+                                
+                                <h5>Defense Examples:</h5>
+                                <ul>
+                                    <li>Pieces defending king from multiple angles</li>
+                                    <li>Rooks defending each other</li>
+                                    <li>Pieces covering escape squares</li>
+                                    <li>Coordinated counterattacks</li>
+                                </ul>
+                                
+                                <div class="alert alert-danger">
+                                    <strong>Truth:</strong> Good defense requires perfect coordination!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perfect Coordination Examples -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Perfect Coordination Examples</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Queen + Knight Partnership</h4>
+                                <p class="card-text">The most powerful attacking combination in chess.</p>
+                                
+                                <h5>Why They Work Well:</h5>
+                                <ul>
+                                    <li>Knight covers squares queen cannot</li>
+                                    <li>Queen provides long-range power</li>
+                                    <li>Knight creates tactical complications</li>
+                                    <li>Queen delivers finishing blows</li>
+                                </ul>
+                                
+                                <h5>Typical Patterns:</h5>
+                                <ul>
+                                    <li>Knight forks, queen follows up</li>
+                                    <li>Knight supports queen attacks</li>
+                                    <li>Queen protects knight</li>
+                                    <li>Coordinated mating attacks</li>
+                                </ul>
+                                
+                                <div class="alert alert-primary">
+                                    <strong>Example:</strong> Knight on f5, queen on g4 - classic attacking setup
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Bishop Pair Dominance</h4>
+                                <p class="card-text">Two bishops together control the entire board.</p>
+                                
+                                <h5>Bishop Pair Advantages:</h5>
+                                <ul>
+                                    <li>Control both color complexes</li>
+                                    <li>Long-range diagonal power</li>
+                                    <li>Difficult to block</li>
+                                    <li>Excellent in open positions</li>
+                                </ul>
+                                
+                                <h5>Coordination Methods:</h5>
+                                <ul>
+                                    <li>Parallel diagonal control</li>
+                                    <li>Cross-fire on key squares</li>
+                                    <li>Supporting pawn breaks</li>
+                                    <li>Controlling escape squares</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Example:</strong> Bishops on c4 and f4 - crossfire on center
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Rook Coordination</h4>
+                                <p class="card-text">Rooks work best when supporting each other.</p>
+                                
+                                <h5>Rook Teamwork:</h5>
+                                <ul>
+                                    <li>Controlling open files together</li>
+                                    <li>Defending each other</li>
+                                    <li>Doubling on files or ranks</li>
+                                    <li>Supporting pawn advances</li>
+                                </ul>
+                                
+                                <h5>Perfect Setup:</h5>
+                                    <li>Rooks on open files</li>
+                                    <li>Connected rooks</li>
+                                    <li>Rooks behind passed pawns</li>
+                                    <li>Rooks controlling key ranks</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Example:</strong> Rooks on d1 and d2 - controlling the d-file
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">Minor Piece Harmony</h4>
+                                <p class="card-text">Knights and bishops complement each other perfectly.</p>
+                                
+                                <h5>Knight-Bishop Synergy:</h5>
+                                <ul>
+                                    <li>Knight covers bishop's weaknesses</li>
+                                    <li>Bishop covers knight's weaknesses</li>
+                                    <li>Together control all squares</li>
+                                    <li>Create complex tactical patterns</li>
+                                </ul>
+                                
+                                <h5>Coordination Examples:</h5>
+                                <ul>
+                                    <li>Knight outpost, bishop support</li>
+                                    <li>Bishop pins, knight exploits</li>
+                                    <li>Coordinated attacks on weak squares</li>
+                                    <li>Mutual defense of key areas</li>
+                                </ul>
+                                
+                                <div class="alert alert-danger">
+                                    <strong>Example:</strong> Knight on d5, bishop on c4 - classic center control
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coordination Training -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Coordination Training Methods</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">🎯 How to Improve Piece Coordination</h4>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Training Exercises:</h5>
+                                        <ul>
+                                            <li><strong>Position Analysis:</strong> Find best piece placement</li>
+                                            <li><strong>Coordination Puzzles:</strong> Find optimal piece teamwork</li>
+                                            <li><strong>Game Analysis:</strong> Study master coordination</li>
+                                            <li><strong>Practice Games:</strong> Focus on piece harmony</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h5>Study Focus:</h5>
+                                        <ul>
+                                            <li><strong>Master Games:</strong> Analyze piece coordination</li>
+                                            <li><strong>Strategic Themes:</strong> Study coordination patterns</li>
+                                            <li><strong>Tactical Combinations:</strong> Multi-piece tactics</li>
+                                            <li><strong>Endgame Technique:</strong> Piece coordination in endings</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="mt-4">Daily Coordination Practice:</h5>
+                                <div class="practice-list">
+                                    <div class="alert alert-light mb-2">
+                                        <strong>Exercise 1:</strong> Take any position and identify how pieces could be better coordinated.
+                                    </div>
+                                    <div class="alert alert-light mb-2">
+                                        <strong>Exercise 2:</strong> Practice games focusing only on piece coordination.
+                                    </div>
+                                    <div class="alert alert-light mb-2">
+                                        <strong>Exercise 3:</strong> Study one coordination pattern per week.
+                                    </div>
+                                    <div class="alert alert-light">
+                                        <strong>Exercise 4:</strong> Analyze your games for coordination improvements.
+                                    </div>
+                                </div>
+                                
+                                <div class="alert alert-warning mt-4">
+                                    <h6>🎯 Pro Tip:</h6>
+                                    <p class="mb-0">Before every move, ask: "How does this improve my piece coordination?"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Coordination Mistakes -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Common Coordination Mistakes</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">⚠️ Coordination Pitfalls to Avoid</h4>
+                                
+                                <div class="mistake-category mb-4">
+                                    <h5>Development Errors:</h5>
+                                    <ul>
+                                        <li><strong>Uneven Development:</strong> Some pieces developed, others not</li>
+                                        <li><strong>Poor Piece Placement:</strong> Pieces on inactive squares</li>
+                                        <li><strong>Lack of Harmony:</strong> Pieces working against each other</li>
+                                        <li><strong>Overcrowding:</strong> Too many pieces on same squares</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mistake-category mb-4">
+                                    <h5>Strategic Errors:</h5>
+                                    <ul>
+                                        <li><strong>No Unified Plan:</strong> Pieces pursuing different goals</li>
+                                        <li><strong>Ignoring Coordination:</strong> Focusing only on individual pieces</li>
+                                        <li><strong>Poor Piece Trade:</strong> Trading well-coordinated pieces</li>
+                                        <li><strong>Passive Coordination:</strong> Pieces defending but not attacking</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mistake-category">
+                                    <h5>Tactical Errors:</h5>
+                                    <ul>
+                                        <li><strong>Missing Combinations:</strong> Not seeing coordinated attacks</li>
+                                        <li><strong>Piece Isolation:</strong> Pieces cut off from team</li>
+                                        <li><strong>Weak Coordination:</strong> Pieces not supporting each other</li>
+                                        <li><strong>Coordination Breakdown:</strong> Losing piece harmony</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="alert alert-info mt-4">
+                                    <strong>Remember:</strong> Good coordination is a habit - practice it in every game!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your Coordination Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What is the most powerful attacking combination?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkCoordinationAnswer(this, false)">Queen + Bishop</button>
+                                    <button class="btn btn-outline-primary" onclick="checkCoordinationAnswer(this, true)">Queen + Knight</button>
+                                    <button class="btn btn-outline-primary" onclick="checkCoordinationAnswer(this, false)">Two Rooks</button>
+                                    <button class="btn btn-outline-primary" onclick="checkCoordinationAnswer(this, false)">Bishop Pair</button>
+                                </div>
+                                <div id="coordinationQuizResult1" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+                                    <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkCoordinationAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('coordinationQuizResult1');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! Queen + Knight is the most powerful attacking combination.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Excellent! The queen and knight complement each other perfectly for coordinated attacks.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Not quite! Think about which combination creates the most tactical complications.</div>';
+            }
+        }
+
+        function checkCoordinationAnswer2(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('coordinationQuizResult2');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! Every move should improve overall piece coordination.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Perfect! Good coordination is the foundation of strong chess play.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! What should be the guiding principle of your moves?</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

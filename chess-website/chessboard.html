@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-info text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4">The Chessboard</h1>
+                <p class="lead">Understanding the battlefield of chess</p>
+            </div>
+        </section>
+
+        <!-- Chessboard Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Board Structure</h2>
+                        <p>The chessboard consists of 64 squares arranged in an 8×8 grid. Each square has a unique coordinate that combines a letter (a-h) and a number (1-8).</p>
+                        
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li><strong>64 Squares:</strong> 8 rows × 8 columns</li>
+                            <li><strong>Two Colors:</strong> Light and dark squares alternating</li>
+                            <li><strong>Coordinates:</strong> Files (a-h) and ranks (1-8)</li>
+                            <li><strong>Orientation:</strong> White pieces start on ranks 1-2, Black on ranks 7-8</li>
+                        </ul>
+                        
+                        <h3>Board Setup Rules:</h3>
+                        <ol>
+                            <li>Always place a white square in the bottom-right corner</li>
+                            <li>White pieces go on ranks 1 and 2</li>
+                            <li>Black pieces go on ranks 7 and 8</li>
+                            <li>Queens start on their own color squares</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <img src="images/Chessboard.png" alt="Chess Board" class="img-fluid rounded shadow-lg mb-3">
+                            <p class="text-muted">Standard chessboard with proper orientation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Board Coordinates -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Understanding Board Coordinates</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Files (Columns)</h3>
+                        <p>The vertical columns are called "files" and are labeled with letters a through h, from left to right from White's perspective:</p>
+                        <div class="alert alert-primary">
+                            <strong>a-file → b-file → c-file → d-file → e-file → f-file → g-file → h-file</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h3>Ranks (Rows)</h3>
+                        <p>The horizontal rows are called "ranks" and are numbered 1 through 8, from bottom to top from White's perspective:</p>
+                        <div class="alert alert-secondary">
+                            <strong>1st rank → 2nd rank → 3rd rank → 4th rank → 5th rank → 6th rank → 7th rank → 8th rank</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <h3>Important Squares</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Center Squares</h5>
+                                    <p>d4, e4, d5, e5 - Most important for controlling the game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Corners</h5>
+                                    <p>a1, h1, a8, h8 - Often critical in endgames</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Starting Squares</h5>
+                                    <p>Where each piece begins the game</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Board Zones -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Board Zones and Areas</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>King's Side vs Queen's Side</h3>
+                        <p>The board is divided into two halves:</p>
+                        <ul>
+                            <li><strong>King's Side (K-side):</strong> Files e, f, g, h</li>
+                            <li><strong>Queen's Side (Q-side):</strong> Files a, b, c, d</li>
+                        </ul>
+                        <p>This division is important for understanding castling and strategic plans.</p>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h3>Opening Principles</h3>
+                        <p>Key concepts for the opening phase:</p>
+                        <ul>
+                            <li><strong>Control the Center:</strong> Occupy or influence central squares</li>
+                            <li><strong>Develop Pieces:</strong> Move knights and bishops early</li>
+                            <li><strong>King Safety:</strong> Castle early to protect the king</li>
+                            <li><strong>Pawn Structure:</strong> Create a solid pawn foundation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Board -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Quick Quiz</h5>
+                                <p class="card-text">What color is the square a1?</p>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkBoardAnswer(this, false)">White</button>
+                                    <button class="btn btn-outline-primary" onclick="checkBoardAnswer(this, true)">Black</button>
+                                    <button class="btn btn-outline-primary" onclick="checkBoardAnswer(this, false)">It depends on orientation</button>
+                                </div>
+                                <div id="boardQuizResult" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Board Facts</h5>
+                                <p class="card-text">Did you know?</p>
+                                <ul>
+                                    <li>The center squares are the most valuable in chess</li>
+                                    <li>Each square can be identified by its coordinate</li>
+                                    <li>The board orientation never changes during a game</li>
+                                </ul>
+                                <button class="btn btn-info" onclick="showBoardFact()">Show Another Fact</button>
+                                <div id="boardFactDisplay" class="mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkBoardAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! a1 is always a dark square';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Try again';
+            }
+        }
+
+        const boardFacts = [
+            "The chessboard has been standardized since the 19th century",
+            "In algebraic notation, each square has a unique coordinate",
+            "The center squares (d4, e4, d5, e5) are called the 'central squares'",
+            "The board's 64 squares represent the perfect balance for chess strategy",
+            "Chess boards can be made from wood, plastic, marble, or even glass"
+        ];
+
+        function showBoardFact() {
+            const randomFact = boardFacts[Math.floor(Math.random() * boardFacts.length)];
+            document.getElementById('boardFactDisplay').innerHTML = 
+                `<div class="alert alert-info">${randomFact}</div>`;
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                console.log('Before change - themeIcon:', themeIcon, 'textContent:', themeIcon ? themeIcon.textContent : 'not found');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+                
+                console.log('After change - textContent:', themeIcon ? themeIcon.textContent : 'not found');
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

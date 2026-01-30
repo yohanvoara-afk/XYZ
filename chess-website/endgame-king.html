@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endgame King Activity - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Endgame King Activity</h1>
+                <p class="lead">The king becomes a powerful fighting piece in the endgame</p>
+                <a href="tactics.html#endgame" class="btn btn-light">← Back to Endgame</a>
+            </div>
+        </section>
+
+        <!-- King Activity Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">The King's Transformation</h2>
+                                
+                                <p class="lead">In the endgame, the king transforms from a piece to protect into a powerful attacking and defending piece. Understanding when and how to activate your king is crucial for endgame success.</p>
+                                
+                                <h4>Why King Activity Matters:</h4>
+                                <ul>
+                                    <li><strong>Fighting Power:</strong> King becomes a major piece</li>
+                                    <li><strong>Support Role:</strong> Helps advance pawns</li>
+                                    <li><strong>Defensive Strength:</strong> Stops enemy counterplay</li>
+                                    <li><strong>Attacking Force:</strong> Creates mating threats</li>
+                                    <li><strong>Endgame Mastery:</strong> Essential for winning endings</li>
+                                </ul>
+                                
+                                <div class="alert alert-primary">
+                                    <strong>Endgame Rule:</strong> "In the endgame, the king is a fighting piece!"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- When to Activate King -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">When to Activate Your King</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Safe Conditions</h4>
+                                <p class="card-text">Activate king when position is relatively safe.</p>
+                                
+                                <h5>Safety Indicators:</h5>
+                                <ul>
+                                    <li><strong>Queens Off Board:</strong> No major attacking pieces</li>
+                                    <li><strong>Major Pieces Reduced:</strong> Limited attacking power</li>
+                                    <li><strong>Position Simplified:</strong> Few tactical complications</li>
+                                    <li><strong>Enemy King Distant:</strong> No immediate counter threats</li>
+                                </ul>
+                                
+                                <h5>Safe Activation Signs:</h5>
+                                <ul>
+                                    <li>No immediate checks possible</li>
+                                    <li>Enemy pieces far from your king</li>
+                                    <li>Position relatively closed</li>
+                                    <li>Material advantage secured</li>
+                                </ul>
+                                
+                                <div class="alert alert-primary">
+                                    <strong>Key:</strong> Safety first - only activate when safe!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">Risky Situations</h4>
+                                <p class="card-text">Avoid king activation in dangerous positions.</p>
+                                
+                                <h5>Danger Indicators:</h5>
+                                <ul>
+                                    <li><strong>Queens Present:</strong> Major attacking threats</li>
+                                    <li><strong>Open Files:</strong> Enemy rooks active</li>
+                                    <li><strong>Tactical Complications:</strong> Complex positions</li>
+                                    <li><strong>Enemy Pieces Close:</strong> Immediate threats possible</li>
+                                </ul>
+                                
+                                <h5>When to Stay Safe:</h5>
+                                <ul>
+                                    <li>Enemy queen still on board</li>
+                                    <li>Open files to your king</li>
+                                    <li>Enemy pieces well-coordinated</li>
+                                    <li>Position highly tactical</li>
+                                </ul>
+                                
+                                <div class="alert alert-danger">
+                                    <strong>Warning:</strong> Premature king activation can be fatal!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Active King Principles -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Active King Principles</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Centralization</h4>
+                                <p class="card-text">Move king toward center for maximum influence.</p>
+                                
+                                <h5>Why Centralize:</h5>
+                                <ul>
+                                    <li>Controls more squares</li>
+                                    <li>Can reach any area quickly</li>
+                                    <li>Supports multiple operations</li>
+                                    <li>Restricts enemy king</li>
+                                </ul>
+                                
+                                <h5>Centralization Goals:</h5>
+                                <ul>
+                                    <li>Reach d4, e4, d5, or e5</li>
+                                    <li>Control key central squares</li>
+                                    <li>Support pawn breaks</li>
+                                    <li>Prepare for endgame phase</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Principle:</strong> Centralized king controls the game!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Support Pawns</h4>
+                                <p class="card-text">King actively helps advance pawns.</p>
+                                
+                                <h5>Pawn Support Methods:</h5>
+                                <ul>
+                                    <li>Protect advancing pawns</li>
+                                    <li>Clear path for pawn promotion</li>
+                                    <li>Defend pawn breaks</li>
+                                    <li>Support passed pawns</li>
+                                </ul>
+                                
+                                <h5>King-Pawn Coordination:</h5>
+                                <ul>
+                                    <li>King behind passed pawns</li>
+                                    <li>King beside pawn majority</li>
+                                    <li>King defending pawn chain</li>
+                                    <li>King leading pawn advance</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Rule:</strong> King and pawn together are unstoppable!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-info">Attack Weaknesses</h4>
+                                <p class="card-text">King attacks enemy pawn weaknesses.</p>
+                                
+                                <h5>Attack Targets:</h5>
+                                <ul>
+                                    <li>Weak enemy pawns</li>
+                                    <li>Isolated pawns</li>
+                                    <li>Backward pawns</li>
+                                    <li>Undefended pieces</li>
+                                </ul>
+                                
+                                <h5>Attack Coordination:</h5>
+                                <ul>
+                                    <li>King creates threats</li>
+                                    <li>Forces enemy defensive moves</li>
+                                    <li>Wins material gradually</li>
+                                    <li>Creates multiple problems</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Strategy:</strong> Use king to create and exploit weaknesses!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">Stop Counterplay</h4>
+                                <p class="card-text">King prevents enemy counterattacks.</p>
+                                
+                                <h5>Defensive Roles:</h5>
+                                <ul>
+                                    <li>Block enemy passed pawns</li>
+                                    <li>Defend key squares</li>
+                                    <li>Support defensive pieces</li>
+                                    <li>Control enemy king</li>
+                                </ul>
+                                
+                                <h5>Counterplay Prevention:</h5>
+                                <ul>
+                                    <li>Stop enemy pawn breaks</li>
+                                    <li>Restrict enemy piece activity</li>
+                                    <li>Maintain positional advantage</li>
+                                    <li>Convert advantage to win</li>
+                                </ul>
+                                
+                                <div class="alert alert-danger">
+                                    <strong>Defense:</strong> Active king is the best defender!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- King Activity Examples -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">King Activity Examples</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">👑 Practical King Scenarios</h4>
+                                
+                                <div class="king-example mb-4">
+                                    <h5>Scenario 1: King and Pawn Endgame</h5>
+                                    <p><strong>Position:</strong> King + passed pawn vs King</p>
+                                    <p><strong>King's Role:</strong></p>
+                                    <ul>
+                                        <li>Lead pawn to promotion</li>
+                                        <li>Control key squares</li>
+                                        <li>Opposition technique</li>
+                                        <li>Box enemy king</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="king-example mb-4">
+                                    <h5>Scenario 2: King with Minor Pieces</h5>
+                                    <p><strong>Position:</strong> King + bishop/knight vs King</p>
+                                    <p><strong>King's Role:</strong></p>
+                                    <ul>
+                                        <li>Drive enemy king to corner</li>
+                                        <li>Support checkmate setup</li>
+                                        <li>Control escape squares</li>
+                                        <li>Coordinate with pieces</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="king-example mb-4">
+                                    <h5>Scenario 3: King in Complex Endings</h5>
+                                    <p><strong>Position:</strong> Multiple pieces + pawns</p>
+                                    <p><strong>King's Role:</strong></p>
+                                    <ul>
+                                        <li>Support pawn majority</li>
+                                        <li>Attack weak pawns</li>
+                                        <li>Defend against counterplay</li>
+                                        <li>Coordinate with all pieces</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="king-example">
+                                    <h5>Scenario 4: King vs Rook</h5>
+                                    <p><strong>Position:</strong> King defending against rook</p>
+                                    <p><strong>King's Role:</strong></p>
+                                    <ul>
+                                        <li>Stay in center</li>
+                                        <li>Avoid edges and corners</li>
+                                        <li>Use stalemate tricks</li>
+                                        <li>Maximize drawing chances</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="alert alert-success mt-4">
+                                    <strong>Key Insight:</strong> The king's role changes based on the specific endgame type!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- King Activity Training -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">King Activity Training</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">📚 How to Master King Activity</h4>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Study Methods:</h5>
+                                        <ul>
+                                            <li><strong>Endgame Books:</strong> Study classic endings</li>
+                                            <li><strong>King Endgames:</strong> Focus on king + pawn</li>
+                                            <li><strong>Master Games:</strong> Analyze king activity</li>
+                                            <li><strong>Positional Play:</strong> Understand king placement</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h5>Practice Techniques:</h5>
+                                        <ul>
+                                            <li><strong>King Endgames:</strong> Practice specific endings</li>
+                                            <li><strong>Opposition:</strong> Master opposition technique</li>
+                                            <li><strong>King Races:</strong> Practice king vs king</li>
+                                            <li><strong>Complex Endings:</strong> King with multiple pieces</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="mt-4">Essential King Techniques:</h5>
+                                <div class="technique-list">
+                                    <div class="alert alert-light mb-2">
+                                        <strong>Opposition:</strong> Kings facing each other with one square between - key to king endings
+                                    </div>
+                                    <div class="alert alert-light mb-2">
+                                        <strong>Triangulation:</strong> King moves in triangle to gain tempo - advanced technique
+                                    </div>
+                                    <div class="alert alert-light mb-2">
+                                        <strong>King Activity:</strong> When and how to activate king safely
+                                    </div>
+                                    <div class="alert alert-light">
+                                        <strong>King Defense:</strong> Using king to stop enemy threats
+                                    </div>
+                                </div>
+                                
+                                <div class="alert alert-primary mt-4">
+                                    <h6>🎯 Pro Tip:</h6>
+                                    <p class="mb-0">Master king activity by practicing specific endgame types. Start with simple king + pawn endings!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common King Mistakes -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Common King Activity Mistakes</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">⚠️ King Activity Pitfalls</h4>
+                                
+                                <div class="mistake-category mb-4">
+                                    <h5>Timing Errors:</h5>
+                                    <ul>
+                                        <li><strong>Premature Activation:</strong> Moving king too early</li>
+                                        <li><strong>Late Activation:</strong> Missing optimal king moves</li>
+                                        <li><strong>Wrong Timing:</strong> Activating in dangerous positions</li>
+                                        <li><strong>Slow Activation:</strong> Not centralizing quickly enough</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mistake-category mb-4">
+                                    <h5>Positional Errors:</h5>
+                                    <ul>
+                                        <li><strong>Poor King Placement:</strong> King on wrong squares</li>
+                                        <li><strong>Wrong Direction:</strong> King moving away from action</li>
+                                        <li><strong>Lack of Support:</strong> King isolated from pieces</li>
+                                        <li><strong>Overextension:</strong> King too far from safety</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mistake-category">
+                                    <h5>Strategic Errors:</h5>
+                                    <ul>
+                                        <li><strong>Ignoring King:</strong> Forgetting king's potential</li>
+                                        <li><strong>King as Liability:</strong> Treating king only defensively</li>
+                                        <li><strong>Poor Coordination:</strong> King not working with pieces</li>
+                                        <li><strong>Missing King Moves:</strong> Not seeing best king moves</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="alert alert-warning mt-4">
+                                    <strong>Remember:</strong> The king is your most powerful endgame piece - use it wisely!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your King Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">When should you activate your king?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkKingAnswer(this, false)">Always in the endgame</button>
+                                    <button class="btn btn-outline-primary" onclick="checkKingAnswer(this, true)">When queens are off board</button>
+                                    <button class="btn btn-outline-primary" onclick="checkKingAnswer(this, false)">When you have material advantage</button>
+                                    <button class="btn btn-outline-primary" onclick="checkKingAnswer(this, false)">Never, keep king safe</button>
+                                </div>
+                                <div id="kingQuizResult1" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What is the best king position?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkKingAnswer2(this, false)">Corner of the board</button>
+                                    <button class="btn btn-outline-primary" onclick="checkKingAnswer2(this, true)">Center of the board</button>
+                                    <button class="btn btn-outline-primary" onclick="checkKingAnswer2(this, false)">Behind pawns</button>
+                                    <button class="btn btn-outline-primary" onclick="checkKingAnswer2(this, false)">Edge of the board</button>
+                                </div>
+                                <div id="kingQuizResult2" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkKingAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('kingQuizResult1');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! When queens are off the board is generally safe for king activation.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Excellent! The absence of queens makes king activation much safer.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Not quite! Think about when the board is safest for king activation.</div>';
+            }
+        }
+
+        function checkKingAnswer2(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('kingQuizResult2');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! The center gives the king maximum influence.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Perfect! A centralized king controls the most squares and can reach any area quickly.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! Where does the king have the most power and influence?</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

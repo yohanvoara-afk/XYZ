@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruy Lopez - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-success text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Ruy Lopez</h1>
+                <p class="lead">The Spanish Opening - A positional masterpiece</p>
+                <a href="tactics.html#openings" class="btn btn-light">← Back to Openings</a>
+            </div>
+        </section>
+
+        <!-- Opening Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">The Ruy Lopez</h2>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-success">1.e4 e5 2.Nf3 Nc6 3.Bb5</h3>
+                                </div>
+                                
+                                <p class="lead">The Ruy Lopez, also known as the Spanish Opening, is one of the most respected and played openings in chess history. Named after the 16th-century Spanish priest Ruy López de Segura, it has been a favorite of world champions for centuries.</p>
+                                
+                                <h4>Why Play the Ruy Lopez?</h4>
+                                <ul>
+                                    <li><strong>Positional Depth:</strong> Rich strategic possibilities</li>
+                                    <li><strong>Long-term Pressure:</strong> Sustained initiative</li>
+                                    <li><strong>Flexibility:</strong> Multiple plans and variations</li>
+                                    <li><strong>Proven Track Record:</strong> Played at the highest level</li>
+                                    <li><strong>Educational Value:</strong> Teaches fundamental chess principles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Ideas -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Key Strategic Ideas</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Opening Moves Explained</h4>
+                                <div class="move-sequence">
+                                    <p><strong>1.e4 e5 2.Nf3 Nc6</strong> - Standard Italian setup</p>
+                                    <p><strong>3.Bb5</strong> - The key move! Puts pressure on c6</p>
+                                    <p><strong>Main Idea:</strong> Indirect control of center, prepare long-term strategy</p>
+                                </div>
+                                
+                                <h5>Why 3.Bb5 Works:</h5>
+                                <ul>
+                                    <li>Indirect pressure on e5 via c6</li>
+                                    <li>Prepares to challenge Black's center</li>
+                                    <li>Creates long-term strategic problems</li>
+                                    <li>Flexible piece placement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Strategic Goals</h4>
+                                <ul>
+                                    <li><strong>Center Control:</strong> Fight for d4 and e5 squares</li>
+                                    <li><strong>Piece Advantage:</strong> Create favorable piece trades</li>
+                                    <li><strong>Space Advantage:</strong> Control more board space</li>
+                                    <li><strong>King Safety:</strong> Safe king with attacking potential</li>
+                                    <li><strong>Endgame Preparation:</strong> Set up favorable endgames</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Key Concept:</strong> The Ruy Lopez is about building small advantages that accumulate over time.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Variations -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Main Variations</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Morphy Defense</h4>
+                                <p><strong>Moves:</strong> 3...a6 4.Ba4 Nf6 5.O-O</p>
+                                <p>Most popular and solid response. Leads to rich positional play.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Challenges White's bishop</li>
+                                    <li>Prepares ...b5 to drive bishop away</li>
+                                    <li>Solid development</li>
+                                    <li>Counterplay in center</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Best for:</strong> Players who enjoy deep strategic battles
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Open Defense</h4>
+                                <p><strong>Moves:</strong> 3...a6 4.Ba4 Nf6 5.O-O Nxe4</p>
+                                <p>Sharp variation where Black grabs the center pawn immediately.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Immediate material gain</li>
+                                    <li>Tactical complications</li>
+                                    <li>Counterattacking chances</li>
+                                    <li>Dynamic positions</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Best for:</strong> Tactical players who accept risks for compensation
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-info">Closed Defense</h4>
+                                <p><strong>Moves:</strong> 3...a6 4.Ba4 Nf6 5.O-O Be7</p>
+                                <p>Solid, classical setup. Leads to slow, strategic games.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Harmonious development</li>
+                                    <li>Flexible pawn structure</li>
+                                    <li>Strategic maneuvering</li>
+                                    <li>Long-term planning</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Best for:</strong> Positional players who enjoy patient buildup
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typical Plans -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Typical Plans and Patterns</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">White's Strategic Plans</h4>
+                                
+                                <h5>Early Game:</h5>
+                                <ul>
+                                    <li>Castle kingside quickly</li>
+                                    <li>Prepare d4 center push</li>
+                                    <li>Control c-file with rook</li>
+                                    <li>Maintain pressure on e5</li>
+                                </ul>
+                                
+                                <h5>Middle Game:</h5>
+                                <ul>
+                                    <li>Kingside attack with f4-f5</li>
+                                    <li>Control open files</li>
+                                    <li>Exploit space advantage</li>
+                                    <li>Transition to favorable endgame</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>White's Advantage:</strong> Long-term pressure and space
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Black's Strategic Plans</h4>
+                                
+                                <h5>Early Game:</h5>
+                                <ul>
+                                    <li>Challenge White's bishop with ...a6 and ...b5</li>
+                                    <li>Develop pieces harmoniously</li>
+                                    <li>Prepare ...d5 counterplay</li>
+                                    <li>Castle to safety</li>
+                                </ul>
+                                
+                                <h5>Middle Game:</h5>
+                                <ul>
+                                    <li>Counterattack in center</li>
+                                    <li>Exploit White's slow development</li>
+                                    <li>Create tactical complications</li>
+                                    <li>Equalize with accurate play</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Black's Strategy:</strong> Neutralize pressure and create counterplay
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Games -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Famous Ruy Lopez Games</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">🏆 Legendary Masterpieces</h4>
+                                
+                                <div class="game-example mb-4">
+                                    <h5>Kasparov vs. Karpov (World Championship 1985)</h5>
+                                    <p>Classic demonstration of White's positional pressure in the Ruy Lopez. Kasparov showed how to build small advantages into a winning attack.</p>
+                                </div>
+                                
+                                <div class="game-example mb-4">
+                                    <h5>Fischer vs. Spassky (World Championship 1972)</h5>
+                                    <p>Fischer's handling of the Ruy Lopez showcased his deep understanding of positional chess and endgame technique.</p>
+                                </div>
+                                
+                                <div class="game-example">
+                                    <h5>Capablanca vs. Marshall (1918)</h5>
+                                    <p>Famous "Marshall Attack" game where Capablanca navigated Black's aggressive intentions to demonstrate defensive mastery.</p>
+                                </div>
+                                
+                                <div class="alert alert-warning mt-4">
+                                    <strong>Study Tip:</strong> Analyzing master games is the best way to understand Ruy Lopez strategy!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tips -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Mastery Guide</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">📚 How to Master the Ruy Lopez</h4>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Study Priorities:</h5>
+                                        <ul>
+                                            <li>Understand basic pawn structures</li>
+                                            <li>Learn typical maneuvering patterns</li>
+                                            <li>Study key endgame positions</li>
+                                            <li>Master tactical motifs</li>
+                                            <li>Analyze classical games</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h5>Training Focus:</h5>
+                                        <ul>
+                                            <li>Positional understanding</li>
+                                            <li>Long-term planning</li>
+                                            <li>Pawn structure evaluation</li>
+                                            <li>Endgame technique</li>
+                                            <li>Strategic patience</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="alert alert-success mt-4">
+                                    <h6>🎯 Pro Tip:</h6>
+                                    <p class="mb-0">The Ruy Lopez teaches patience and long-term thinking. Focus on understanding the strategic ideas rather than memorizing specific moves!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What is the main purpose of 3.Bb5?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkRuyAnswer(this, false)">Direct attack on e5</button>
+                                    <button class="btn btn-outline-primary" onclick="checkRuyAnswer(this, true)">Put pressure on c6 and control center</button>
+                                    <button class="btn btn-outline-primary" onclick="checkRuyAnswer(this, false)">Prepare to castle</button>
+                                    <button class="btn btn-outline-primary" onclick="checkRuyAnswer(this, false)">Develop bishop actively</button>
+                                </div>
+                                <div id="ruyQuizResult1" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Which variation is most solid for Black?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkRuyAnswer2(this, false)">Open Defense</button>
+                                    <button class="btn btn-outline-primary" onclick="checkRuyAnswer2(this, true)">Morphy Defense</button>
+                                    <button class="btn btn-outline-primary" onclick="checkRuyAnswer2(this, false)">Schliemann Defense</button>
+                                    <button class="btn btn-outline-primary" onclick="checkRuyAnswer2(this, false)">Cozio Defense</button>
+                                </div>
+                                <div id="ruyQuizResult2" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkRuyAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('ruyQuizResult1');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! Bb5 puts pressure on c6 and indirectly controls the center.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Excellent! The bishop on b5 creates long-term problems by pressuring c6 and fighting for center control.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Not quite! Think about the long-term strategic purpose of Bb5.</div>';
+            }
+        }
+
+        function checkRuyAnswer2(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('ruyQuizResult2');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! The Morphy Defense is the most solid and popular choice.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Perfect! The Morphy Defense (3...a6) is the most reliable and frequently played response.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! Which variation gives Black the most solid position?</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

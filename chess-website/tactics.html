@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Tactics - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-success text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Chess Tactics</h1>
+                <p class="lead">Master tactical patterns and improve your game</p>
+            </div>
+        </section>
+
+        <!-- Openings Section -->
+        <section id="openings" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">♟️ Chess Openings</h2>
+                <p class="text-center lead">Master the first phase of the game with these fundamental openings</p>
+        </section>
+
+        <!-- Common Openings -->
+        <section id="openings" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">3 Common Openings</h2>
+                <p class="text-center">Master these fundamental openings to start your games with confidence.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Italian Game</h4>
+                                <p class="card-text"><strong>Opening Moves:</strong> 1.e4 e5 2.Nf3 Nc6 3.Bc4</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Control the center with e4</li>
+                                    <li>Develop knights early</li>
+                                    <li>Place bishop on active square</li>
+                                    <li>Prepare for quick castling</li>
+                                </ul>
+                                
+                                <h5>Strategic Goals:</h5>
+                                <ul>
+                                    <li>Rapid piece development</li>
+                                    <li>Center control</li>
+                                    <li>King safety</li>
+                                    <li>Prepare middlegame attack</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Best for:</strong> Beginners learning classical principles
+                                </div>
+                                <a href="openings-italian.html" class="btn btn-primary">Learn Italian Game</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Ruy Lopez</h4>
+                                <p class="card-text"><strong>Opening Moves:</strong> 1.e4 e5 2.Nf3 Nc6 3.Bb5</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Put pressure on Black's knight</li>
+                                    <li>Control center indirectly</li>
+                                    <li>Prepare long-term strategy</li>
+                                    <li>Flexible pawn structure</li>
+                                </ul>
+                                
+                                <h5>Strategic Goals:</h5>
+                                <ul>
+                                    <li>Gradual positional advantage</li>
+                                    <li>Control key squares</li>
+                                    <li>Prepare endgame advantage</li>
+                                    <li>Restrict opponent's options</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Best for:</strong> Players who enjoy strategic, positional play
+                                </div>
+                                <a href="openings-ruy.html" class="btn btn-success">Learn Ruy Lopez</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Sicilian Defense</h4>
+                                <p class="card-text"><strong>Opening Moves:</strong> 1.e4 c5</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Asymmetrical pawn structure</li>
+                                    <li>Fight for center control</li>
+                                    <li>Create imbalanced positions</li>
+                                    <li>Counter-attacking potential</li>
+                                </ul>
+                                
+                                <h5>Strategic Goals:</h5>
+                                <ul>
+                                    <li>Dynamic counterplay</li>
+                                    <li>Unbalanced positions</li>
+                                    <li>Winning chances with Black</li>
+                                    <li>Complex tactical battles</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Best for:</strong> Aggressive players seeking winning chances
+                                </div>
+                                <a href="openings-sicilian.html" class="btn btn-warning">Learn Sicilian Defense</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle Game Concepts -->
+        <section id="middlegame" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">3 Middle Game Concepts</h2>
+                <p class="text-center">Master these essential concepts to dominate the middle game phase.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Tactics</h4>
+                                <p class="card-text">The art of forcing moves and immediate threats.</p>
+                                
+                                <h5>Common Tactical Patterns:</h5>
+                                <ul>
+                                    <li><strong>Fork:</strong> Attack two pieces simultaneously</li>
+                                    <li><strong>Pin:</strong> Restrict piece movement</li>
+                                    <li><strong>Skewer:</strong> Force valuable piece to move</li>
+                                    <li><strong>Discovered Attack:</strong> Reveal hidden threat</li>
+                                    <li><strong>Removal of Guard:</strong> Eliminate defender</li>
+                                    <li><strong>Deflection:</strong> Force piece away from duty</li>
+                                </ul>
+                                
+                                <h5>How to Improve:</h5>
+                                <ul>
+                                    <li>Daily tactical puzzles</li>
+                                    <li>Pattern recognition training</li>
+                                    <li>Analyze your games for missed tactics</li>
+                                    <li>Study tactical combinations</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Remember:</strong> Tactics flow from good positions!
+                                </div>
+                                <a href="middlegame-tactics.html" class="btn btn-primary">Learn Tactics</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Planning</h4>
+                                <p class="card-text">Creating and executing long-term strategies.</p>
+                                
+                                <h5>Strategic Planning Steps:</h5>
+                                <ul>
+                                    <li><strong>Assess Position:</strong> Evaluate piece activity</li>
+                                    <li><strong>Identify Weaknesses:</strong> Find targets to attack</li>
+                                    <li><strong>Set Goals:</strong> Define what you want to achieve</li>
+                                    <li><strong>Execute Plan:</strong> Move pieces toward goals</li>
+                                </ul>
+                                
+                                <h5>Common Strategic Themes:</h5>
+                                <ul>
+                                    <li>Space advantage utilization</li>
+                                    <li>Weak square exploitation</li>
+                                    <li>Pawn structure advantages</li>
+                                    <li>King safety considerations</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Key:</strong> Every move should support your plan!
+                                </div>
+                                <a href="middlegame-planning.html" class="btn btn-success">Learn Planning</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Piece Coordination</h4>
+                                <p class="card-text">Making your pieces work together harmoniously.</p>
+                                
+                                <h5>Coordination Principles:</h5>
+                                <ul>
+                                    <li><strong>Piece Harmony:</strong> Pieces support each other</li>
+                                    <li><strong>Control Key Squares:</strong> Focus on important areas</li>
+                                    <li><strong>Attack Together:</strong> Multiple pieces on target</li>
+                                    <li><strong>Defend Together:</strong> Mutual protection</li>
+                                </ul>
+                                
+                                <h5>Perfect Coordination Examples:</h5>
+                                <ul>
+                                    <li>Queen and knight attacking together</li>
+                                    <li>Bishop pair controlling diagonals</li>
+                                    <li>Rooks on open files</li>
+                                    <li>Pieces defending key weaknesses</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Goal:</strong> Make your pieces stronger together than apart!
+                                </div>
+                                <a href="middlegame-coordination.html" class="btn btn-warning">Learn Coordination</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Endgame Basics -->
+        <section id="endgame" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">3 Endgame Basics</h2>
+                <p class="text-center">Master these fundamental endgame concepts to convert advantages into wins.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">King Activity</h4>
+                                <p class="card-text">The king becomes a powerful attacking piece in the endgame.</p>
+                                
+                                <h5>Active King Principles:</h5>
+                                <ul>
+                                    <li><strong>Centralize:</strong> Move king toward center</li>
+                                    <li><strong>Support Pawns:</strong> King helps advance pawns</li>
+                                    <li><strong>Attack Weaknesses:</strong> King attacks enemy pawns</li>
+                                    <li><strong>Stop Counterplay:</strong> King defends key areas</li>
+                                </ul>
+                                
+                                <h5>When to Activate King:</h5>
+                                <ul>
+                                    <li>When queens are off the board</li>
+                                    <li>When major pieces are reduced</li>
+                                    <li>When position is relatively safe</li>
+                                    <li>In king and pawn endgames</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Rule:</strong> In the endgame, the king is a fighting piece!
+                                </div>
+                                <a href="endgame-king.html" class="btn btn-primary">Learn King Activity</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Passed Pawns</h4>
+                                <p class="card-text">Pawns that cannot be stopped by enemy pawns.</p>
+                                
+                                <h5>Passed Pawn Types:</h5>
+                                <ul>
+                                    <li><strong>Protected Passed:</strong> Defended by own pawn</li>
+                                    <li><strong>Outside Passed:</strong> Far from main action</li>
+                                    <li><strong>Connected Passed:</strong> Multiple passed pawns</li>
+                                    <li><strong>Distant Passed:</strong> Far from enemy king</li>
+                                </ul>
+                                
+                                <h5>How to Use Passed Pawns:</h5>
+                                <ul>
+                                    <li>Advance with piece support</li>
+                                    <li>Create distractions elsewhere</li>
+                                    <li>Use as decoy for king movement</li>
+                                    <li>Promote to winning material</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Principle:</strong> "Passed pawns must be pushed!"
+                                </div>
+                                <a href="endgame-pawns.html" class="btn btn-success">Learn Passed Pawns</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Basic Checkmates</h4>
+                                <p class="card-text">Essential checkmate patterns every player must know.</p>
+                                
+                                <h5>Fundamental Checkmates:</h5>
+                                <ul>
+                                    <li><strong>Queen + King:</strong> Drive king to edge/corner</li>
+                                    <li><strong>Rook + King:</strong> Box king and shrink box</li>
+                                    <li><strong>Two Rooks:</strong> Cut off king line by line</li>
+                                    <li><strong>Rook + Bishop:</strong> Use bishop to control squares</li>
+                                </ul>
+                                
+                                <h5>Checkmate Technique:</h5>
+                                <ul>
+                                    <li>Limit enemy king's movement</li>
+                                    <li>Use "waiting moves" when needed</li>
+                                    <li>Drive king to corner or edge</li>
+                                    <li>Deliver final checkmate</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Important:</strong> Practice these until they're automatic!
+                                </div>
+                                <a href="endgame-checkmates.html" class="btn btn-warning">Learn Checkmates</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tactical Puzzles -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Tactical Puzzles</h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Puzzle 1: White to Move</h5>
+                                <p class="card-text">Find the winning combination for White</p>
+                                <div class="bg-secondary text-white p-3 rounded text-center mb-3">
+                                    <p class="mb-0">Position: White Rook on e1, White Knight on f3<br>
+                                    Black King on h8, Black Rook on f8</p>
+                                </div>
+                                <div class="btn-group w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkPuzzle(1, 'Nf3-g5')">Nf3-g5</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPuzzle(1, 'Re1-e8+')">Re1-e8+</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPuzzle(1, 'Nf3-h4')">Nf3-h4</button>
+                                </div>
+                                <div id="puzzle1-result" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Puzzle 2: Black to Move</h5>
+                                <p class="card-text">Find the best move for Black</p>
+                                <div class="bg-dark text-white p-3 rounded text-center mb-3">
+                                    <p class="mb-0">Position: Black Queen on d8, Black Bishop on c5<br>
+                                    White King on g1, White Pawn on f2</p>
+                                </div>
+                                <div class="btn-group w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkPuzzle(2, 'Qd8-d1+')">Qd8-d1+</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPuzzle(2, 'Bc5-d4')">Bc5-d4</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPuzzle(2, 'Qd8-h4')">Qd8-h4</button>
+                                </div>
+                                <div id="puzzle2-result" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Tips -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Training Tips</h2>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Daily Practice</h5>
+                                <ul>
+                                    <li>Solve 10-15 tactical puzzles daily</li>
+                                    <li>Focus on pattern recognition</li>
+                                    <li>Time yourself for improvement</li>
+                                    <li>Review missed puzzles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Study Methods</h5>
+                                <ul>
+                                    <li>Analyze grandmaster games</li>
+                                    <li>Learn common tactical motifs</li>
+                                    <li>Practice visualization</li>
+                                    <li>Use chess training apps</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Game Application</h5>
+                                <ul>
+                                    <li>Look for tactics in every position</li>
+                                    <li>Calculate candidate moves</li>
+                                    <li>Double-check before moving</li>
+                                    <li>Learn from your mistakes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function showTacticExample(tactic) {
+            const examples = {
+                fork: "Knight on e5 attacks King on g6 and Queen on c6",
+                pin: "Bishop on g5 pins Knight on f6 to Queen on d8",
+                skewer: "Queen on d2 skewers King on d8 and Rook on a5",
+                discovered: "Knight moves from f3 to g5, discovering Queen on d1 attacking h5",
+                removal: "Capture the knight defending the king to enable checkmate",
+                deflection: "Sacrifice a piece to force the queen away from defending the king"
+            };
+            
+            alert(`${tactic.charAt(0).toUpperCase() + tactic.slice(1)} Example:\n${examples[tactic]}`);
+        }
+
+        function checkPuzzle(puzzleNumber, move) {
+            const solutions = {
+                1: 'Re1-e8+',
+                2: 'Qd8-d1+'
+            };
+            
+            const resultDiv = document.getElementById(`puzzle${puzzleNumber}-result`);
+            
+            if (move === solutions[puzzleNumber]) {
+                resultDiv.innerHTML = '<div class="alert alert-success">Correct! Well done!</div>';
+            } else {
+                resultDiv.innerHTML = '<div class="alert alert-danger">Not quite right. Try again!</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            console.log('Looking for elements...');
+            console.log('themeToggle:', themeToggle);
+            console.log('themeIcon:', themeIcon);
+            console.log('themeIcon.textContent:', themeIcon ? themeIcon.textContent : 'not found');
+            console.log('body:', body);
+            
+            if (!themeToggle) {
+                console.error('themeToggle not found!');
+                return;
+            }
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                console.log('Before change - themeIcon:', themeIcon, 'textContent:', themeIcon ? themeIcon.textContent : 'not found');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+                
+                console.log('After change - textContent:', themeIcon ? themeIcon.textContent : 'not found');
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

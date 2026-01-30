@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Game - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Italian Game</h1>
+                <p class="lead">Master one of chess's oldest and most classical openings</p>
+                <a href="tactics.html#openings" class="btn btn-light">← Back to Openings</a>
+            </div>
+        </section>
+
+        <!-- Opening Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">The Italian Game</h2>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-primary">1.e4 e5 2.Nf3 Nc6 3.Bc4</h3>
+                                </div>
+                                
+                                <p class="lead">The Italian Game is one of the oldest recorded chess openings, dating back to the 16th century. It's named after the Italian masters who developed it, including Gioachino Greco.</p>
+                                
+                                <h4>Why Play the Italian Game?</h4>
+                                <ul>
+                                    <li><strong>Easy to Learn:</strong> Clear, logical development patterns</li>
+                                    <li><strong>Active Pieces:</strong> Develops pieces to natural squares</li>
+                                    <li><strong>Center Control:</strong> Fights for central dominance</li>
+                                    <li><strong>Quick Castling:</strong> Enables rapid king safety</li>
+                                    <li><strong>Tactical Opportunities:</strong> Creates attacking chances</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Ideas -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Key Ideas and Principles</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Opening Moves Explained</h4>
+                                <div class="move-sequence">
+                                    <p><strong>1.e4</strong> - Controls center, opens lines for queen and bishop</p>
+                                    <p><strong>1...e5</strong> - Black's most classical response</p>
+                                    <p><strong>2.Nf3</strong> - Develops knight, attacks e5, prepares castling</p>
+                                    <p><strong>2...Nc6</strong> - Defends e5, develops knight</p>
+                                    <p><strong>3.Bc4</strong> - Develops bishop to active square, eyes weak f7</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Strategic Goals</h4>
+                                <ul>
+                                    <li><strong>Center Control:</strong> Maintain pressure on d5 and e5</li>
+                                    <li><strong>Piece Development:</strong> Bring pieces to active squares</li>
+                                    <li><strong>King Safety:</strong> Castle quickly and safely</li>
+                                    <li><strong>Attack Preparation:</strong> Prepare kingside attack</li>
+                                    <li><strong>Space Advantage:</strong> Control key squares</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Variations -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Common Variations</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Giuoco Piano</h4>
+                                <p><strong>Moves:</strong> 3...Bc5</p>
+                                <p>Black mirrors White's development. Leads to quiet, positional play.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Solid pawn structure</li>
+                                    <li>Gradual development</li>
+                                    <li>Strategic maneuvering</li>
+                                    <li>Long-term planning</li>
+                                </ul>
+                                
+                                <div class="alert alert-info">
+                                    <strong>Best for:</strong> Positional players who enjoy quiet games
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-warning">Two Knights Defense</h4>
+                                <p><strong>Moves:</strong> 3...Nf6</p>
+                                <p>Black counter-attacks immediately. Leads to sharp, tactical play.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Immediate counterplay</li>
+                                    <li>Tactical complications</li>
+                                    <li>Attacking opportunities</li>
+                                    <li>Dynamic positions</li>
+                                </ul>
+                                
+                                <div class="alert alert-warning">
+                                    <strong>Best for:</strong> Tactical players who enjoy sharp battles
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-success">Hungarian Defense</h4>
+                                <p><strong>Moves:</strong> 3...Be7</p>
+                                <p>Solid but passive. Prepares to challenge White's center.</p>
+                                
+                                <h5>Key Ideas:</h5>
+                                <ul>
+                                    <li>Solid development</li>
+                                    <li>Flexible pawn structure</li>
+                                    <li>Preparation for d5</li>
+                                    <li>Defensive reliability</li>
+                                </ul>
+                                
+                                <div class="alert alert-success">
+                                    <strong>Best for:</strong> Beginners learning solid development
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typical Plans -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Typical Plans and Patterns</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">White's Typical Plans</h4>
+                                
+                                <h5>Early Game:</h5>
+                                <ul>
+                                    <li>Castle kingside (O-O)</li>
+                                    <li>Prepare d3 to support e4</li>
+                                    <li>Develop c3-knight to d2</li>
+                                    <li>Control center with c3-d4 push</li>
+                                </ul>
+                                
+                                <h5>Middle Game:</h5>
+                                <ul>
+                                    <li>Kingside attack with f4-f5</li>
+                                    <li>Control open files</li>
+                                    <li>Exploit weak f7 square</li>
+                                    <li>Use bishop pair advantage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Black's Typical Plans</h4>
+                                
+                                <h5>Early Game:</h5>
+                                <ul>
+                                    <li>Castle kingside quickly</li>
+                                    <li>Challenge White's center</li>
+                                    <li>Develop pieces harmoniously</li>
+                                    <li>Prepare ...d5 counterplay</li>
+                                </ul>
+                                
+                                <h5>Middle Game:</h5>
+                                <ul>
+                                    <li>Counterattack in center</li>
+                                    <li>Exploit White's slow development</li>
+                                    <li>Create tactical complications</li>
+                                    <li>Equalize with accurate play</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Mistakes -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Common Mistakes to Avoid</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title text-danger">⚠️ Pitfalls for Both Sides</h4>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>White's Mistakes:</h5>
+                                        <ul>
+                                            <li><strong>Slow Development:</strong> Moving same piece multiple times</li>
+                                            <li><strong>Early Queen Attacks:</strong> Qh5+ without proper preparation</li>
+                                            <li><strong>Neglecting Castling:</strong> Leaving king in center</li>
+                                            <li><strong>Pawn Weaknesses:</strong> Creating unnecessary weaknesses</li>
+                                            <li><strong>Premature Attacks:</strong> Attacking before full development</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h5>Black's Mistakes:</h5>
+                                        <ul>
+                                            <li><strong>Passive Play:</strong> Not challenging White's center</li>
+                                            <li><strong>Weak f7:</strong> Leaving f7 insufficiently defended</li>
+                                            <li><strong>Slow Development:</strong> Falling behind in piece development</li>
+                                            <li><strong>Pawn Structure:</strong> Creating unnecessary pawn weaknesses</li>
+                                            <li><strong>Tactical Blunders:</strong> Missing tactical shots</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tips -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Practice and Study Tips</h2>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">📚 How to Master the Italian Game</h4>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Study Methods:</h5>
+                                        <ul>
+                                            <li>Play practice games online</li>
+                                            <li>Analyze master games</li>
+                                            <li>Study typical patterns</li>
+                                            <li>Learn key tactical ideas</li>
+                                            <li>Review your own games</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h5>Training Focus:</h5>
+                                        <ul>
+                                            <li>Piece development patterns</li>
+                                            <li>Center control techniques</li>
+                                            <li>Common tactical motifs</li>
+                                            <li>Endgame transitions</li>
+                                            <li>Positional understanding</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="alert alert-success mt-4">
+                                    <h6>🎯 Pro Tip:</h6>
+                                    <p class="mb-0">Focus on understanding the ideas rather than memorizing moves. The Italian Game teaches fundamental chess principles that apply to all openings!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What is the main idea behind 3.Bc4?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkItalianAnswer(this, false)">Control the center</button>
+                                    <button class="btn btn-outline-primary" onclick="checkItalianAnswer(this, true)">Develop bishop and pressure f7</button>
+                                    <button class="btn btn-outline-primary" onclick="checkItalianAnswer(this, false)">Prepare to castle</button>
+                                    <button class="btn btn-outline-primary" onclick="checkItalianAnswer(this, false)">Attack the queen</button>
+                                </div>
+                                <div id="italianQuizResult1" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Which variation leads to the sharpest play?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkItalianAnswer2(this, false)">Giuoco Piano</button>
+                                    <button class="btn btn-outline-primary" onclick="checkItalianAnswer2(this, true)">Two Knights Defense</button>
+                                    <button class="btn btn-outline-primary" onclick="checkItalianAnswer2(this, false)">Hungarian Defense</button>
+                                    <button class="btn btn-outline-primary" onclick="checkItalianAnswer2(this, false)">Main Line</button>
+                                </div>
+                                <div id="italianQuizResult2" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkItalianAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('italianQuizResult1');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! Bc4 develops the bishop and puts pressure on the weak f7 square.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Excellent! The bishop on c4 eyes the weak f7 square and controls important diagonals.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Not quite! Think about what the bishop on c4 accomplishes.</div>';
+            }
+        }
+
+        function checkItalianAnswer2(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('italianQuizResult2');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct! The Two Knights leads to sharp tactical battles.';
+                resultDiv.innerHTML = '<div class="alert alert-success">Perfect! The Two Knights Defense with 3...Nf6 creates immediate tactical complications.</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! Which variation creates the most tactical complications?</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

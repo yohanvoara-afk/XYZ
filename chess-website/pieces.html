@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Pieces - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-warning text-dark py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Chess Pieces</h1>
+                <p class="lead">Meet the warriors of the chess battlefield</p>
+            </div>
+        </section>
+
+        <!-- Pieces Overview -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">All Chess Pieces</h2>
+                <p class="text-center lead">Each player starts with 16 pieces. Click on any piece to learn more about it!</p>
+                
+                <div class="row g-4" id="chessGallery">
+                    <div class="col-md-4 col-6 text-center">
+                        <img src="images/white king.png" alt="Chess King" class="img-fluid mb-2" style="height: 100px; cursor: pointer;" onclick="showPieceDetails('king')">
+                        <p class="mb-0"><strong>King</strong></p>
+                        <small class="text-muted">Most important piece</small>
+                    </div>
+                    <div class="col-md-4 col-6 text-center">
+                        <img src="images/White queen.png" alt="Chess Queen" class="img-fluid mb-2" style="height: 100px; cursor: pointer;" onclick="showPieceDetails('queen')">
+                        <p class="mb-0"><strong>Queen</strong></p>
+                        <small class="text-muted">Most powerful piece</small>
+                    </div>
+                    <div class="col-md-4 col-6 text-center">
+                        <img src="images/White tower.png" alt="Chess Rook" class="img-fluid mb-2" style="height: 100px; cursor: pointer;" onclick="showPieceDetails('rook')">
+                        <p class="mb-0"><strong>Rook</strong></p>
+                        <small class="text-muted">Castle piece</small>
+                    </div>
+                    <div class="col-md-4 col-6 text-center">
+                        <img src="images/White bishop.png" alt="Chess Bishop" class="img-fluid mb-2" style="height: 100px; cursor: pointer;" onclick="showPieceDetails('bishop')">
+                        <p class="mb-0"><strong>Bishop</strong></p>
+                        <small class="text-muted">Diagonal mover</small>
+                    </div>
+                    <div class="col-md-4 col-6 text-center">
+                        <img src="images/White knight.png" alt="Chess Knight" class="img-fluid mb-2" style="height: 100px; cursor: pointer;" onclick="showPieceDetails('knight')">
+                        <p class="mb-0"><strong>Knight</strong></p>
+                        <small class="text-muted">L-shaped jumper</small>
+                    </div>
+                    <div class="col-md-4 col-6 text-center">
+                        <img src="images/White pawn.png" alt="Chess Pawn" class="img-fluid mb-2" style="height: 100px; cursor: pointer;" onclick="showPieceDetails('pawn')">
+                        <p class="mb-0"><strong>Pawn</strong></p>
+                        <small class="text-muted">Foot soldier</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Piece Details Modal -->
+        <div class="modal fade" id="pieceModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pieceModalTitle">Piece Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body" id="pieceModalBody">
+                        <!-- Content will be dynamically inserted -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Piece Information -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Detailed Piece Information</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">King</h5>
+                                <p><strong>Value:</strong> Infinite (game ends if captured)</p>
+                                <p><strong>Movement:</strong> One square in any direction</p>
+                                <p><strong>Special Move:</strong> Castling with rook</p>
+                                <p><strong>Starting Position:</strong> e1 (White), e8 (Black)</p>
+                                <div class="alert alert-warning">
+                                    <strong>Important:</strong> The king must be protected at all costs!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Queen</h5>
+                                <p><strong>Value:</strong> 9 points</p>
+                                <p><strong>Movement:</strong> Any number of squares horizontally, vertically, or diagonally</p>
+                                <p><strong>Power:</strong> Combines rook and bishop movements</p>
+                                <p><strong>Starting Position:</strong> d1 (White), d8 (Black)</p>
+                                <div class="alert alert-info">
+                                    <strong>Tip:</strong> Develop your queen early but don't expose it to danger!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Rook</h5>
+                                <p><strong>Value:</strong> 5 points</p>
+                                <p><strong>Movement:</strong> Any number of squares horizontally or vertically</p>
+                                <p><strong>Special Move:</strong> Participates in castling</p>
+                                <p><strong>Starting Position:</strong> a1, h1 (White), a8, h8 (Black)</p>
+                                <div class="alert alert-secondary">
+                                    <strong>Strategy:</strong> Rooks are powerful on open files!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Bishop</h5>
+                                <p><strong>Value:</strong> 3 points</p>
+                                <p><strong>Movement:</strong> Any number of squares diagonally</p>
+                                <p><strong>Color:</strong> Stays on same color squares entire game</p>
+                                <p><strong>Starting Position:</strong> c1, f1 (White), c8, f8 (Black)</p>
+                                <div class="alert alert-success">
+                                    <strong>Fact:</strong> Two bishops together are very powerful!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Knight</h5>
+                                <p><strong>Value:</strong> 3 points</p>
+                                <p><strong>Movement:</strong> L-shape: 2 squares in one direction, 1 square perpendicular</p>
+                                <p><strong>Special:</strong> Only piece that can jump over other pieces</p>
+                                <p><strong>Starting Position:</strong> b1, g1 (White), b8, g8 (Black)</p>
+                                <div class="alert alert-danger">
+                                    <strong>Unique:</strong> Knights are excellent in closed positions!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Pawn</h5>
+                                <p><strong>Value:</strong> 1 point</p>
+                                <p><strong>Movement:</strong> Forward one square (two on first move)</p>
+                                <p><strong>Capture:</strong> Diagonally forward one square</p>
+                                <p><strong>Special:</strong> Can be promoted to any piece when reaching the opposite end</p>
+                                <div class="alert alert-primary">
+                                    <strong>Power:</strong> "Pawn structure determines the outcome of the game"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Piece Values Comparison -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Piece Values Comparison</h2>
+                
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Piece</th>
+                                        <th>Point Value</th>
+                                        <th>Quantity per Player</th>
+                                        <th>Total Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Queen</td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rook</td>
+                                        <td>5</td>
+                                        <td>2</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bishop</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Knight</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pawn</td>
+                                        <td>1</td>
+                                        <td>8</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <td><strong>Total (excluding King)</strong></td>
+                                        <td>-</td>
+                                        <td><strong>15</strong></td>
+                                        <td><strong>39</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="alert alert-info mt-4">
+                            <h6>Understanding Piece Values:</h6>
+                            <ul class="mb-0">
+                                <li>These values are approximate and depend on the position</li>
+                                <li>A rook is generally worth more than a bishop + knight</li>
+                                <li>Two bishops are often worth more than two knights</li>
+                                <li>Pawns become more valuable as they advance toward promotion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Test Your Knowledge</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Which piece can jump over others?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkPieceAnswer(this, false)">Queen</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPieceAnswer(this, false)">Bishop</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPieceAnswer(this, true)">Knight</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPieceAnswer(this, false)">Rook</button>
+                                </div>
+                                <div id="pieceQuizResult" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">How many points is a queen worth?</h5>
+                                <div class="btn-group-vertical w-100" role="group">
+                                    <button class="btn btn-outline-primary" onclick="checkPieceAnswer2(this, false)">5 points</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPieceAnswer2(this, true)">9 points</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPieceAnswer2(this, false)">3 points</button>
+                                    <button class="btn btn-outline-primary" onclick="checkPieceAnswer2(this, false)">1 point</button>
+                                </div>
+                                <div id="pieceQuizResult2" class="mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        const pieceDetails = {
+            king: {
+                title: "King",
+                image: "images/white king.png",
+                description: "The king is the most important piece in chess. The game ends when the king is checkmated.",
+                movement: "Moves one square in any direction (horizontally, vertically, or diagonally).",
+                special: "Can castle with a rook under specific conditions.",
+                tips: "Keep your king safe in the opening and middle game, but activate it in the endgame."
+            },
+            queen: {
+                title: "Queen",
+                image: "images/White queen.png",
+                description: "The queen is the most powerful piece on the board.",
+                movement: "Moves any number of squares horizontally, vertically, or diagonally.",
+                special: "Combines the movement of a rook and bishop.",
+                tips: "Develop your queen early but don't expose it to unnecessary danger."
+            },
+            rook: {
+                title: "Rook",
+                image: "images/White tower.png",
+                description: "The rook is a powerful piece, especially on open files.",
+                movement: "Moves any number of squares horizontally or vertically.",
+                special: "Can participate in castling with the king.",
+                tips: "Place rooks on open files where they can control important squares."
+            },
+            bishop: {
+                title: "Bishop",
+                image: "images/White bishop.png",
+                description: "The bishop is excellent for long-range diagonal attacks.",
+                movement: "Moves any number of squares diagonally.",
+                special: "Stays on the same color squares throughout the entire game.",
+                tips: "Two bishops working together are very powerful, especially in open positions."
+            },
+            knight: {
+                title: "Knight",
+                image: "images/White knight.png",
+                description: "The knight is the only piece that can jump over other pieces.",
+                movement: "Moves in an L-shape: 2 squares in one direction, then 1 square perpendicular.",
+                special: "Can jump over any piece, friend or foe.",
+                tips: "Knights are excellent in closed positions and can attack pieces that other pieces cannot reach."
+            },
+            pawn: {
+                title: "Pawn",
+                image: "images/White pawn.png",
+                description: "Pawns are the soul of chess and form the foundation of your position.",
+                movement: "Moves forward one square (two squares on first move). Captures diagonally forward.",
+                special: "Can be promoted to any piece when reaching the opposite end of the board.",
+                tips: "Pawn structure determines the character of the position. Protect your pawn weaknesses!"
+            }
+        };
+
+        function showPieceDetails(piece) {
+            const details = pieceDetails[piece];
+            const modalBody = document.getElementById('pieceModalBody');
+            const modalTitle = document.getElementById('pieceModalTitle');
+            
+            modalTitle.textContent = details.title;
+            modalBody.innerHTML = `
+                <div class="text-center mb-3">
+                    <img src="${details.image}" alt="${details.title}" class="img-fluid" style="max-height: 150px;">
+                </div>
+                <p><strong>Description:</strong> ${details.description}</p>
+                <p><strong>Movement:</strong> ${details.movement}</p>
+                <p><strong>Special:</strong> ${details.special}</p>
+                <div class="alert alert-info">
+                    <strong>Pro Tip:</strong> ${details.tips}
+                </div>
+            `;
+            
+            const modal = new bootstrap.Modal(document.getElementById('pieceModal'));
+            modal.show();
+        }
+
+        function checkPieceAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('pieceQuizResult');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct!';
+                resultDiv.innerHTML = '<div class="alert alert-success">The knight is the only piece that can jump over others!</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! Think about which piece moves in an L-shape.</div>';
+            }
+        }
+
+        function checkPieceAnswer2(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            const resultDiv = document.getElementById('pieceQuizResult2');
+            
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct!';
+                resultDiv.innerHTML = '<div class="alert alert-success">The queen is worth 9 points, making it the most valuable piece!</div>';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Wrong';
+                resultDiv.innerHTML = '<div class="alert alert-danger">Try again! The queen is the most powerful piece.</div>';
+            }
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                console.log('Before change - themeIcon:', themeIcon, 'textContent:', themeIcon ? themeIcon.textContent : 'not found');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+                
+                console.log('After change - textContent:', themeIcon ? themeIcon.textContent : 'not found');
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

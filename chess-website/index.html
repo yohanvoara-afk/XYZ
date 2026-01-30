@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Tacticians - Learn & Play Chess</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-title {
+            color: #2c3e50;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section bg-light py-5">
+            <div class="container text-center">
+                <h1 class="hero-title display-4 mb-4">Welcome to Chess Tacticians</h1>
+                <p class="lead">Making chess learning fun</p>
+                <img src="images/Chessboard.png" alt="Chess Board" class="img-fluid rounded shadow-lg mb-4" style="max-width: 600px;">
+                <div class="mt-4">
+                    <a href="rules.html" class="btn btn-primary btn-lg me-3">Learn Rules</a>
+                    <a href="tactics.html" class="btn btn-primary btn-lg me-3">Practice Tactics</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Why Learn Chess?</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-5">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <svg width="48" height="48" fill="currentColor" class="text-primary">
+                                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                    </svg>
+                                </div>
+                                <h5 class="card-title">Complete Rules</h5>
+                                <p class="card-text">Learn all chess rules from basic moves to advanced strategies.</p>
+                                <a href="rules.html" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <svg width="48" height="48" fill="currentColor" class="text-success">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <h5 class="card-title">Tactical Training</h5>
+                                <p class="card-text">Improve your tactical skills with interactive exercises.</p>
+                                <a href="tactics.html" class="btn btn-primary" style="background: linear-gradient(45deg, #007bff, #0056b3) !important; border: none !important;">Learn Tactics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Learning Resources</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Beginner Topics</h4>
+                        <ol>
+                            <li>Basic piece movements
+                                <ul>
+                                    <li>Pawn moves and promotions</li>
+                                    <li>Knight's L-shaped movement</li>
+                                    <li>Bishop's diagonal moves</li>
+                                </ul>
+                            </li>
+                            <li>Board setup and notation</li>
+                            <li>Basic opening principles</li>
+                            <li>Simple checkmate patterns</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Advanced Strategies</h4>
+                        <ul>
+                            <li>Positional understanding</li>
+                            <li>Tactical combinations
+                                <ul>
+                                    <li>Forks and pins</li>
+                                    <li>Skewers and discovered attacks</li>
+                                </ul>
+                            </li>
+                            <li>Endgame techniques</li>
+                            <li>Tournament preparation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-info text-white">
+            <div class="container">
+                <h2 class="text-center mb-5">Contact Us</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <form id="contactForm">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                        <div class="invalid-feedback">Please enter your message.</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                                <div id="formResult"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        console.log('Script loading...');
+        
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Rules - Chess Tacticians</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Internal CSS example -->
+    <style>
+        .rule-section {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .piece-movement {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/chess-logo.svg" alt="Chess Logo" width="30" height="30" class="d-inline-block align-top">
+                    Chess Tacticians
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="rules.html">Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tactics.html">Tactics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chessboard.html">Chessboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pieces.html">Pieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light ms-2" id="themeToggle" type="button">
+                                <span id="themeIcon">🌙</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4">Chess Rules</h1>
+                <p class="lead">Complete guide to playing chess</p>
+            </div>
+        </section>
+
+        <!-- Basic Rules Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="rule-section">
+                    <h2>Basic Rules of Chess</h2>
+                    <p>Chess is a two-player strategy board game played on an 8×8 grid with 64 squares. Each player starts with 16 pieces:</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>White Pieces</h4>
+                            <ul>
+                                <li>1 King</li>
+                                <li>1 Queen</li>
+                                <li>2 Rooks</li>
+                                <li>2 Bishops</li>
+                                <li>2 Knights</li>
+                                <li>8 Pawns</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Black Pieces</h4>
+                            <ul>
+                                <li>1 King</li>
+                                <li>1 Queen</li>
+                                <li>2 Rooks</li>
+                                <li>2 Bishops</li>
+                                <li>2 Knights</li>
+                                <li>8 Pawns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Board Setup -->
+                <div class="rule-section">
+                    <h2>Board Setup</h2>
+                    <ol>
+                        <li>The board is placed so that each player has a white square on the right-hand corner</li>
+                        <li>White pieces are placed on the first and second ranks</li>
+                        <li>Black pieces are placed on the eighth and seventh ranks</li>
+                        <li>Pieces are arranged in the following order from left to right:
+                            <ul>
+                                <li>Back rank: Rook, Knight, Bishop, Queen, King, Bishop, Knight, Rook</li>
+                                <li>Second rank: All pawns</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <div class="text-center mt-3">
+                        <img src="images/Chessboard.png" alt="Chess Board Initial Setup" class="img-fluid rounded shadow" style="max-width: 500px;">
+                    </div>
+                </div>
+
+                <!-- Piece Movements -->
+                <div class="rule-section">
+                    <h2>Piece Movements</h2>
+                    
+                    <div class="piece-movement">
+                        <h4><strong>Pawn</strong></h4>
+                        <ul>
+                            <li>Moves forward one square (two squares on first move)</li>
+                            <li>Captures diagonally forward one square</li>
+                            <li>Can be promoted to any piece when reaching the opposite end</li>
+                            <li>Can capture en passant under specific conditions</li>
+                        </ul>
+                    </div>
+
+                    <div class="piece-movement">
+                        <h4><strong>Rook</strong></h4>
+                        <ul>
+                            <li>Moves horizontally or vertically any number of squares</li>
+                            <li>Cannot jump over other pieces</li>
+                            <li>Participates in castling with the king</li>
+                        </ul>
+                    </div>
+
+                    <div class="piece-movement">
+                        <h4><strong>Knight</strong></h4>
+                        <ul>
+                            <li>Moves in an L-shape: 2 squares in one direction, 1 square perpendicular</li>
+                            <li>Only piece that can jump over other pieces</li>
+                            <li>Always moves to a square of opposite color</li>
+                        </ul>
+                    </div>
+
+                    <div class="piece-movement">
+                        <h4><strong>Bishop</strong></h4>
+                        <ul>
+                            <li>Moves diagonally any number of squares</li>
+                            <li>Cannot jump over other pieces</li>
+                            <li>Stays on squares of the same color throughout the game</li>
+                        </ul>
+                    </div>
+
+                    <div class="piece-movement">
+                        <h4><strong>Queen</strong></h4>
+                        <ul>
+                            <li>Most powerful piece - combines rook and bishop movements</li>
+                            <li>Moves horizontally, vertically, or diagonally any number of squares</li>
+                            <li>Cannot jump over other pieces</li>
+                        </ul>
+                    </div>
+
+                    <div class="piece-movement">
+                        <h4><strong>King</strong></h4>
+                        <ul>
+                            <li>Moves one square in any direction</li>
+                            <li>Cannot move into check</li>
+                            <li>Can castle with a rook under specific conditions</li>
+                            <li>Most important piece - game ends when checkmated</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Special Rules -->
+                <div class="rule-section">
+                    <h2>Special Rules</h2>
+                    
+                    <h4>Castling</h4>
+                    <p>A special move involving king and rook:</p>
+                    <ul>
+                        <li>King moves two squares toward a rook</li>
+                        <li>Rook moves to the square the king crossed</li>
+                        <li>Conditions:
+                            <ul>
+                                <li>Neither king nor rook has moved before</li>
+                                <li>No pieces between king and rook</li>
+                                <li>King is not in check</li>
+                                <li>King doesn't pass through or land on attacked squares</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>En Passant</h4>
+                    <p>Special pawn capture:</p>
+                    <ul>
+                        <li>When a pawn moves two squares from starting position</li>
+                        <li>Opponent's pawn can capture it as if it moved only one square</li>
+                        <li>Must be done immediately on the next turn</li>
+                    </ul>
+
+                    <h4>Promotion</h4>
+                    <p>When a pawn reaches the opposite end:</p>
+                    <ul>
+                        <li>Must be promoted to Queen, Rook, Bishop, or Knight</li>
+                        <li>Usually promoted to Queen (most powerful piece)</li>
+                        <li>Can promote even if Queen is still on board</li>
+                    </ul>
+                </div>
+
+                <!-- Winning the Game -->
+                <div class="rule-section">
+                    <h2>Winning the Game</h2>
+                    
+                    <h4>Check</h4>
+                    <p>When a king is under attack:</p>
+                    <ul>
+                        <li>Must get out of check immediately</li>
+                        <li>Three ways to escape:
+                            <ol>
+                                <li>Move king to safe square</li>
+                                <li>Block the attack with another piece</li>
+                                <li>Capture the attacking piece</li>
+                            </ol>
+                        </li>
+                    </ul>
+
+                    <h4>Checkmate</h4>
+                    <p>When a king is in check and cannot escape:</p>
+                    <ul>
+                        <li>Game ends - player delivering checkmate wins</li>
+                        <li>No legal moves available to get king out of check</li>
+                    </ul>
+
+                    <h4>Draw</h4>
+                    <p>Game can end in a draw by:</p>
+                    <ul>
+                        <li>Stalemate - player has no legal moves but king is not in check</li>
+                        <li>Threefold repetition - same position occurs three times</li>
+                        <li>Fifty-move rule - 50 moves without pawn move or capture</li>
+                        <li>Insufficient material - neither player can force checkmate</li>
+                        <li>Mutual agreement</li>
+                    </ul>
+                </div>
+
+                <!-- Chess Notation -->
+                <div class="rule-section">
+                    <h2>Chess Notation</h2>
+                    <p>Algebraic notation is used to record moves:</p>
+                    <ul>
+                        <li>Files: a-h (from left to right)</li>
+                        <li>Ranks: 1-8 (from white's perspective)</li>
+                        <li>Pieces: K (King), Q (Queen), R (Rook), B (Bishop), N (Knight)</li>
+                        <li>Captures: x (e.g., Nxe5 - knight captures on e5)</li>
+                        <li>Check: + (e.g., Qh5+)</li>
+                        <li>Checkmate: # (e.g., Qh7#)</li>
+                        <li>Castling: O-O (kingside), O-O-O (queenside)</li>
+                    </ul>
+                </div>
+
+                <!-- Interactive Rules Quiz -->
+                <div class="rule-section">
+                    <h2>Test Your Knowledge</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Quick Quiz</h5>
+                                    <p class="card-text">How many squares can a knight move in one turn?</p>
+                                    <div class="btn-group-vertical w-100" role="group">
+                                        <button class="btn btn-outline-primary" onclick="checkAnswer(this, false)">2 squares</button>
+                                        <button class="btn btn-outline-primary" onclick="checkAnswer(this, false)">3 squares</button>
+                                        <button class="btn btn-outline-primary" onclick="checkAnswer(this, true)">L-shape (2+1)</button>
+                                        <button class="btn btn-outline-primary" onclick="checkAnswer(this, false)">4 squares</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Did You Know?</h5>
+                                    <p class="card-text">The longest possible chess game is 5,949 moves!</p>
+                                    <button class="btn btn-info" onclick="showFact()">Show Another Fact</button>
+                                    <div id="factDisplay" class="mt-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Chess Tacticians. All rights reserved.</p>
+            <p>Learn • Practice • Master</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        function checkAnswer(button, isCorrect) {
+            // Reset all buttons
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.add('btn-outline-primary');
+                btn.disabled = true;
+            });
+            
+            // Highlight correct/incorrect
+            if (isCorrect) {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-success');
+                button.textContent += ' ✓ Correct!';
+            } else {
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-danger');
+                button.textContent += ' ✗ Try again';
+            }
+        }
+
+        const facts = [
+            "The word 'checkmate' comes from the Persian phrase 'Shah Mat' meaning 'the king is dead'.",
+            "There are more possible chess games than atoms in the observable universe.",
+            "The longest recorded chess game took 269 moves and ended in a draw.",
+            "Chess was included in the Olympic Games in 1924, but was later removed.",
+            "The first computer program to play chess was developed in 1956."
+        ];
+
+        function showFact() {
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+            document.getElementById('factDisplay').innerHTML = 
+                `<div class="alert alert-info">${randomFact}</div>`;
+        }
+    </script>
+    <script>
+        // Ultra-simple theme toggle
+        console.log('Script loading...');
+        
+        // Wait for everything to load
+        window.addEventListener('load', function() {
+            console.log('Window fully loaded');
+            
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const body = document.body;
+            
+            console.log('Looking for elements...');
+            console.log('themeToggle:', themeToggle);
+            console.log('themeIcon:', themeIcon);
+            console.log('themeIcon.textContent:', themeIcon ? themeIcon.textContent : 'not found');
+            console.log('body:', body);
+            
+            if (!themeToggle) {
+                console.error('themeToggle not found!');
+                return;
+            }
+            
+            // Load saved theme on page load
+            const savedTheme = localStorage.getItem('chessTheme');
+            console.log('Saved theme:', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                console.log('Applied dark theme on load');
+            } else {
+                if (themeIcon) themeIcon.textContent = '🌙';
+                console.log('Applied light theme on load');
+            }
+            
+            // Test with a simple alert first
+            themeToggle.onclick = function() {
+                console.log('Button was clicked!');
+                console.log('Before change - themeIcon:', themeIcon, 'textContent:', themeIcon ? themeIcon.textContent : 'not found');
+                
+                // Simple theme toggle
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '🌙';
+                        console.log('Changed to moon icon');
+                    }
+                    localStorage.setItem('chessTheme', 'light');
+                    console.log('Switched to light theme - saved to localStorage');
+                } else {
+                    body.classList.add('dark-theme');
+                    if (themeIcon) {
+                        themeIcon.textContent = '☀️';
+                        console.log('Changed to sun icon');
+                    }
+                    localStorage.setItem('chessTheme', 'dark');
+                    console.log('Switched to dark theme - saved to localStorage');
+                }
+                
+                console.log('After change - textContent:', themeIcon ? themeIcon.textContent : 'not found');
+            };
+            
+            console.log('Theme toggle attached successfully');
+        });
+    </script>
+</body>
+</html>
